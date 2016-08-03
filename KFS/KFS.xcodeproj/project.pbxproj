@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A62F21251D518502003E71C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21241D518502003E71C7 /* main.m */; };
+		A62F21281D518502003E71C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21271D518502003E71C7 /* AppDelegate.m */; };
+		A62F212B1D518502003E71C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F212A1D518502003E71C7 /* ViewController.m */; };
+		A62F212E1D518502003E71C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62F212C1D518502003E71C7 /* Main.storyboard */; };
+		A62F21311D518502003E71C7 /* KFS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A62F212F1D518502003E71C7 /* KFS.xcdatamodeld */; };
+		A62F21331D518502003E71C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62F21321D518502003E71C7 /* Assets.xcassets */; };
+		A62F21361D518502003E71C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62F21341D518502003E71C7 /* LaunchScreen.storyboard */; };
+		A62F21411D518502003E71C7 /* KFSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21401D518502003E71C7 /* KFSTests.m */; };
+		A62F214C1D518502003E71C7 /* KFSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F214B1D518502003E71C7 /* KFSUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A62F213D1D518502003E71C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A62F21181D518502003E71C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62F211F1D518502003E71C7;
+			remoteInfo = KFS;
+		};
+		A62F21481D518502003E71C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A62F21181D518502003E71C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62F211F1D518502003E71C7;
+			remoteInfo = KFS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A62F21201D518502003E71C7 /* KFS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62F21241D518502003E71C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A62F21261D518502003E71C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A62F21271D518502003E71C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A62F21291D518502003E71C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A62F212A1D518502003E71C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A62F212D1D518502003E71C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A62F21301D518502003E71C7 /* KFS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KFS.xcdatamodel; sourceTree = "<group>"; };
+		A62F21321D518502003E71C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A62F21351D518502003E71C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A62F21371D518502003E71C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62F213C1D518502003E71C7 /* KFSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62F21401D518502003E71C7 /* KFSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFSTests.m; sourceTree = "<group>"; };
+		A62F21421D518502003E71C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62F21471D518502003E71C7 /* KFSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62F214B1D518502003E71C7 /* KFSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFSUITests.m; sourceTree = "<group>"; };
+		A62F214D1D518502003E71C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A62F211D1D518502003E71C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62F21391D518502003E71C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62F21441D518502003E71C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A62F21171D518502003E71C7 = {
+			isa = PBXGroup;
+			children = (
+				A62F21221D518502003E71C7 /* KFS */,
+				A62F213F1D518502003E71C7 /* KFSTests */,
+				A62F214A1D518502003E71C7 /* KFSUITests */,
+				A62F21211D518502003E71C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A62F21211D518502003E71C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A62F21201D518502003E71C7 /* KFS.app */,
+				A62F213C1D518502003E71C7 /* KFSTests.xctest */,
+				A62F21471D518502003E71C7 /* KFSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A62F21221D518502003E71C7 /* KFS */ = {
+			isa = PBXGroup;
+			children = (
+				A62F21261D518502003E71C7 /* AppDelegate.h */,
+				A62F21271D518502003E71C7 /* AppDelegate.m */,
+				A62F21291D518502003E71C7 /* ViewController.h */,
+				A62F212A1D518502003E71C7 /* ViewController.m */,
+				A62F212C1D518502003E71C7 /* Main.storyboard */,
+				A62F21321D518502003E71C7 /* Assets.xcassets */,
+				A62F21341D518502003E71C7 /* LaunchScreen.storyboard */,
+				A62F21371D518502003E71C7 /* Info.plist */,
+				A62F212F1D518502003E71C7 /* KFS.xcdatamodeld */,
+				A62F21231D518502003E71C7 /* Supporting Files */,
+			);
+			path = KFS;
+			sourceTree = "<group>";
+		};
+		A62F21231D518502003E71C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A62F21241D518502003E71C7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A62F213F1D518502003E71C7 /* KFSTests */ = {
+			isa = PBXGroup;
+			children = (
+				A62F21401D518502003E71C7 /* KFSTests.m */,
+				A62F21421D518502003E71C7 /* Info.plist */,
+			);
+			path = KFSTests;
+			sourceTree = "<group>";
+		};
+		A62F214A1D518502003E71C7 /* KFSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A62F214B1D518502003E71C7 /* KFSUITests.m */,
+				A62F214D1D518502003E71C7 /* Info.plist */,
+			);
+			path = KFSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A62F211F1D518502003E71C7 /* KFS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62F21501D518502003E71C7 /* Build configuration list for PBXNativeTarget "KFS" */;
+			buildPhases = (
+				A62F211C1D518502003E71C7 /* Sources */,
+				A62F211D1D518502003E71C7 /* Frameworks */,
+				A62F211E1D518502003E71C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KFS;
+			productName = KFS;
+			productReference = A62F21201D518502003E71C7 /* KFS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A62F213B1D518502003E71C7 /* KFSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62F21531D518502003E71C7 /* Build configuration list for PBXNativeTarget "KFSTests" */;
+			buildPhases = (
+				A62F21381D518502003E71C7 /* Sources */,
+				A62F21391D518502003E71C7 /* Frameworks */,
+				A62F213A1D518502003E71C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62F213E1D518502003E71C7 /* PBXTargetDependency */,
+			);
+			name = KFSTests;
+			productName = KFSTests;
+			productReference = A62F213C1D518502003E71C7 /* KFSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A62F21461D518502003E71C7 /* KFSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62F21561D518502003E71C7 /* Build configuration list for PBXNativeTarget "KFSUITests" */;
+			buildPhases = (
+				A62F21431D518502003E71C7 /* Sources */,
+				A62F21441D518502003E71C7 /* Frameworks */,
+				A62F21451D518502003E71C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62F21491D518502003E71C7 /* PBXTargetDependency */,
+			);
+			name = KFSUITests;
+			productName = KFSUITests;
+			productReference = A62F21471D518502003E71C7 /* KFSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A62F21181D518502003E71C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = PC_201310113421;
+				TargetAttributes = {
+					A62F211F1D518502003E71C7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A62F213B1D518502003E71C7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A62F211F1D518502003E71C7;
+					};
+					A62F21461D518502003E71C7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A62F211F1D518502003E71C7;
+					};
+				};
+			};
+			buildConfigurationList = A62F211B1D518502003E71C7 /* Build configuration list for PBXProject "KFS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A62F21171D518502003E71C7;
+			productRefGroup = A62F21211D518502003E71C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A62F211F1D518502003E71C7 /* KFS */,
+				A62F213B1D518502003E71C7 /* KFSTests */,
+				A62F21461D518502003E71C7 /* KFSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A62F211E1D518502003E71C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62F21361D518502003E71C7 /* LaunchScreen.storyboard in Resources */,
+				A62F21331D518502003E71C7 /* Assets.xcassets in Resources */,
+				A62F212E1D518502003E71C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62F213A1D518502003E71C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62F21451D518502003E71C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A62F211C1D518502003E71C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62F21311D518502003E71C7 /* KFS.xcdatamodeld in Sources */,
+				A62F212B1D518502003E71C7 /* ViewController.m in Sources */,
+				A62F21281D518502003E71C7 /* AppDelegate.m in Sources */,
+				A62F21251D518502003E71C7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62F21381D518502003E71C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62F21411D518502003E71C7 /* KFSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62F21431D518502003E71C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62F214C1D518502003E71C7 /* KFSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A62F213E1D518502003E71C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62F211F1D518502003E71C7 /* KFS */;
+			targetProxy = A62F213D1D518502003E71C7 /* PBXContainerItemProxy */;
+		};
+		A62F21491D518502003E71C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62F211F1D518502003E71C7 /* KFS */;
+			targetProxy = A62F21481D518502003E71C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A62F212C1D518502003E71C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A62F212D1D518502003E71C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A62F21341D518502003E71C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A62F21351D518502003E71C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A62F214E1D518502003E71C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A62F214F1D518502003E71C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A62F21511D518502003E71C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KFS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A62F21521D518502003E71C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KFS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A62F21541D518502003E71C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KFSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFS.app/KFS";
+			};
+			name = Debug;
+		};
+		A62F21551D518502003E71C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KFSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFS.app/KFS";
+			};
+			name = Release;
+		};
+		A62F21571D518502003E71C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KFSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KFS;
+			};
+			name = Debug;
+		};
+		A62F21581D518502003E71C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KFSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KFS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A62F211B1D518502003E71C7 /* Build configuration list for PBXProject "KFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62F214E1D518502003E71C7 /* Debug */,
+				A62F214F1D518502003E71C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62F21501D518502003E71C7 /* Build configuration list for PBXNativeTarget "KFS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62F21511D518502003E71C7 /* Debug */,
+				A62F21521D518502003E71C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A62F21531D518502003E71C7 /* Build configuration list for PBXNativeTarget "KFSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62F21541D518502003E71C7 /* Debug */,
+				A62F21551D518502003E71C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A62F21561D518502003E71C7 /* Build configuration list for PBXNativeTarget "KFSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62F21571D518502003E71C7 /* Debug */,
+				A62F21581D518502003E71C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A62F212F1D518502003E71C7 /* KFS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A62F21301D518502003E71C7 /* KFS.xcdatamodel */,
+			);
+			currentVersion = A62F21301D518502003E71C7 /* KFS.xcdatamodel */;
+			path = KFS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A62F21181D518502003E71C7 /* Project object */;
+}
