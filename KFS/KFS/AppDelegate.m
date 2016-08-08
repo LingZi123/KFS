@@ -17,6 +17,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    //给姐妹赋值
+    _storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *path=NSHomeDirectory();
+    NSLog(documentsDirectory);
+    //获取是否已经登录
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    BOOL isLogin=[[defaults objectForKey:DE_IsLogin]boolValue];
+    
+    //如果登录进入主界面,否则进入登录界面
+    if (isLogin) {
+        [self makeMianView];
+    }
+    else{
+        [self makeLoginView];
+    }
+    
+    
     return YES;
 }
 
@@ -124,4 +145,19 @@
     }
 }
 
+#pragma mark-根试图
+-(void)makeMianView{
+    if (_mainTabbarv==nil||_mainTabbarv==(id)[NSNull null]) {
+        _mainTabbarv=[_storyboard instantiateViewControllerWithIdentifier:@"MainTabBarV"];
+        
+    }
+    _mainTabbarv.selectedIndex=0;
+    self.window.rootViewController=_mainTabbarv;
+}
+-(void)makeLoginView{
+    if (_loginNav==nil||_loginNav==(id)[NSNull null]) {
+        _loginNav=[_storyboard instantiateViewControllerWithIdentifier:@"LoginNav"];
+    }
+    self.window.rootViewController=_loginNav;
+}
 @end

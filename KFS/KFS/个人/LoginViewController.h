@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LoginMainViewController.h
 //  KFS
 //
 //  Created by PC_201310113421 on 16/8/3.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LoginViewController : UIViewController
+- (IBAction)loginBtnClick:(id)sender;
 
 @end
-

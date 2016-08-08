@@ -1,0 +1,21 @@
+//
+//  KFSPrefixHeader.pch
+//  KFS
+//
+//  Created by PC_201310113421 on 16/8/3.
+//  Copyright © 2016年 PC_201310113421. All rights reserved.
+//
+
+#ifndef KFSPrefixHeader_pch
+#define KFSPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* KFSPrefixHeader_pch */
+
+#define DE_IsLogin @"IsLogin" //是否登录
+#define DE_PhotoImage @"PhotoImage" //头像
+#define DE_Font14 [UIFont systemFontOfSize:14]
+
+

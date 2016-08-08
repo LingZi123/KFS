@@ -17,9 +17,14 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+@property(nonatomic,retain)UITabBarController *mainTabbarv;//主界面
+@property(nonatomic,retain)UINavigationController *loginNav;//登录界面
+@property(nonatomic,retain)UIStoryboard *storyboard;//界面
+
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
-
+-(void)makeMianView;
+-(void)makeLoginView;
 @end
 
