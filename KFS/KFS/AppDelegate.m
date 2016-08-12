@@ -204,6 +204,9 @@
     if (_loginNav==nil||_loginNav==(id)[NSNull null]) {
         _loginNav=[_storyboard instantiateViewControllerWithIdentifier:@"LoginNav"];
     }
+    if (_loginNav.viewControllers.count>1) {
+        [_loginNav popToRootViewControllerAnimated:YES];
+    }
     self.window.rootViewController=_loginNav;
 }
 @end

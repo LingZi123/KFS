@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    pwdTextField.delegate=self;
     
 }
 
@@ -35,7 +36,19 @@
     self.navigationController.navigationBarHidden=NO;
 }
 
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [usenameTextField resignFirstResponder];
+    [pwdTextField resignFirstResponder];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [self loginBtnClick:nil];
+    return YES;
+}
 - (IBAction)loginBtnClick:(id)sender {
+    [usenameTextField resignFirstResponder];
+    [pwdTextField resignFirstResponder];
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
     [defaults setBool:YES forKey:DE_IsLogin];
     [defaults synchronize];

@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "CommonRootViewController.h"
 
-@interface LoginViewController : CommonRootViewController
+@interface LoginViewController : CommonRootViewController<UITextFieldDelegate>{
+    
+    __weak IBOutlet UITextField *usenameTextField;
+    __weak IBOutlet UITextField *pwdTextField;
+}
 - (IBAction)loginBtnClick:(id)sender;
 
 @end
