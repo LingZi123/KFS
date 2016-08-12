@@ -75,6 +75,7 @@
     }
     else{
         //btn图片改变
+        btn.selected=YES;
         [btnArray addObject:btn];
     }
     

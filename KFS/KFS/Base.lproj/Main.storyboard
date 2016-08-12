@@ -117,7 +117,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="g7q-ue-ffE" firstAttribute="leading" secondItem="PUm-EG-fcg" secondAttribute="leadingMargin" constant="6" id="J5X-Ko-560"/>
+                                                <constraint firstItem="g7q-ue-ffE" firstAttribute="leading" secondItem="PUm-EG-fcg" secondAttribute="leadingMargin" constant="10" id="J5X-Ko-560"/>
                                                 <constraint firstItem="g7q-ue-ffE" firstAttribute="centerY" secondItem="PUm-EG-fcg" secondAttribute="centerY" id="YGE-42-Db0"/>
                                                 <constraint firstItem="KV3-Uz-AEL" firstAttribute="trailing" secondItem="PUm-EG-fcg" secondAttribute="trailingMargin" id="g1T-uL-Uag"/>
                                                 <constraint firstItem="KV3-Uz-AEL" firstAttribute="leading" secondItem="PUm-EG-fcg" secondAttribute="leadingMargin" constant="55" id="nqR-NI-bGK"/>
@@ -132,7 +132,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="图像：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bF4-MT-lJu">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="图像：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bF4-MT-lJu">
                                                     <rect key="frame" x="17" y="19" width="51" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="51" id="HjH-2u-kQS"/>
@@ -158,6 +158,7 @@
                                             <constraints>
                                                 <constraint firstItem="Ltu-ZD-HvO" firstAttribute="centerY" secondItem="sbz-kL-tfy" secondAttribute="centerY" id="2DZ-9t-QJ2"/>
                                                 <constraint firstItem="bF4-MT-lJu" firstAttribute="centerY" secondItem="sbz-kL-tfy" secondAttribute="centerY" id="GUK-bK-KAx"/>
+                                                <constraint firstItem="bF4-MT-lJu" firstAttribute="leading" secondItem="sbz-kL-tfy" secondAttribute="leadingMargin" constant="10" id="chh-VS-5Uj"/>
                                                 <constraint firstItem="Ltu-ZD-HvO" firstAttribute="trailing" secondItem="sbz-kL-tfy" secondAttribute="trailingMargin" id="tUg-PU-C4Q"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -226,7 +227,7 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ID1-Xf-uHz" firstAttribute="leading" secondItem="Ask-hQ-6pX" secondAttribute="leadingMargin" constant="11" id="0GI-9a-yzf"/>
+                                                <constraint firstItem="ID1-Xf-uHz" firstAttribute="leading" secondItem="Ask-hQ-6pX" secondAttribute="leadingMargin" constant="10" id="0GI-9a-yzf"/>
                                                 <constraint firstItem="YNE-S5-U0t" firstAttribute="trailing" secondItem="Ask-hQ-6pX" secondAttribute="trailingMargin" id="JT6-t4-LgW"/>
                                                 <constraint firstItem="YNE-S5-U0t" firstAttribute="centerY" secondItem="Ask-hQ-6pX" secondAttribute="centerY" id="JvC-el-810"/>
                                                 <constraint firstItem="ID1-Xf-uHz" firstAttribute="centerY" secondItem="Ask-hQ-6pX" secondAttribute="centerY" id="WU7-mg-nSo"/>
@@ -265,41 +266,59 @@
                                                 <constraint firstItem="WBE-6A-P2d" firstAttribute="leading" secondItem="9Uf-O2-b4V" secondAttribute="trailing" constant="2" id="3LZ-xb-CJf"/>
                                                 <constraint firstItem="WBE-6A-P2d" firstAttribute="trailing" secondItem="01S-7d-8wo" secondAttribute="trailingMargin" id="Lrq-J2-PQq"/>
                                                 <constraint firstItem="9Uf-O2-b4V" firstAttribute="centerY" secondItem="01S-7d-8wo" secondAttribute="centerY" id="lWz-W2-f7O"/>
-                                                <constraint firstItem="9Uf-O2-b4V" firstAttribute="leading" secondItem="01S-7d-8wo" secondAttribute="leadingMargin" constant="11" id="skN-c5-6GL"/>
+                                                <constraint firstItem="9Uf-O2-b4V" firstAttribute="leading" secondItem="01S-7d-8wo" secondAttribute="leadingMargin" constant="10" id="skN-c5-6GL"/>
                                                 <constraint firstItem="WBE-6A-P2d" firstAttribute="centerY" secondItem="01S-7d-8wo" secondAttribute="centerY" id="voA-t5-h0s"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="7bY-fI-LCI">
-                                        <rect key="frame" x="0.0" y="300" width="320" height="127"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="183" id="7bY-fI-LCI">
+                                        <rect key="frame" x="0.0" y="300" width="320" height="183"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7bY-fI-LCI" id="9Ne-Zg-yaU">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIh-iW-aj8">
-                                                    <rect key="frame" x="75" y="48" width="74" height="30"/>
-                                                    <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jD-gV-FUx">
+                                                    <rect key="frame" x="200" y="38" width="47" height="47"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="74" id="0gA-vo-yuH"/>
+                                                        <constraint firstAttribute="width" constant="47" id="ark-eb-8rM"/>
+                                                        <constraint firstAttribute="height" constant="47" id="u77-1y-S0n"/>
                                                     </constraints>
-                                                    <state key="normal" title="删除"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <state key="normal" title="保存" backgroundImage="保存">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jD-gV-FUx">
-                                                    <rect key="frame" x="157" y="48" width="70" height="30"/>
-                                                    <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIh-iW-aj8">
+                                                    <rect key="frame" x="96" y="38" width="47" height="47"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="70" id="LjY-dA-omB"/>
+                                                        <constraint firstAttribute="width" constant="47" id="JF7-Yb-sEH"/>
+                                                        <constraint firstAttribute="height" constant="47" id="mFO-NY-7Eg"/>
                                                     </constraints>
-                                                    <state key="normal" title="保存"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <state key="normal" title="删除" backgroundImage="删除">
+                                                        <color key="titleColor" red="0.86274509799999999" green="0.19215686269999999" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="IIh-iW-aj8" firstAttribute="centerY" secondItem="9Ne-Zg-yaU" secondAttribute="centerY" id="0Hh-fC-2lG"/>
+                                                <constraint firstItem="IIh-iW-aj8" firstAttribute="centerY" secondItem="9Ne-Zg-yaU" secondAttribute="centerY" constant="-43" id="0Hh-fC-2lG"/>
+                                                <constraint firstItem="IIh-iW-aj8" firstAttribute="centerX" secondItem="9Ne-Zg-yaU" secondAttribute="centerX" constant="-43" id="1AV-Rz-D0V"/>
                                                 <constraint firstItem="0jD-gV-FUx" firstAttribute="centerY" secondItem="9Ne-Zg-yaU" secondAttribute="centerY" id="1FW-Fj-pcO"/>
+                                                <constraint firstItem="IIh-iW-aj8" firstAttribute="top" secondItem="9Ne-Zg-yaU" secondAttribute="topMargin" constant="30" id="Elo-GA-eRk"/>
                                                 <constraint firstItem="IIh-iW-aj8" firstAttribute="leading" secondItem="9Ne-Zg-yaU" secondAttribute="leadingMargin" constant="67" id="F8e-Gl-LeJ"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="0jD-gV-FUx" secondAttribute="trailing" constant="85" id="GCp-oA-AjU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0jD-gV-FUx" secondAttribute="trailing" constant="43" id="GCp-oA-AjU"/>
+                                                <constraint firstItem="0jD-gV-FUx" firstAttribute="top" secondItem="9Ne-Zg-yaU" secondAttribute="topMargin" constant="30" id="g75-kH-sLP"/>
+                                                <constraint firstItem="0jD-gV-FUx" firstAttribute="centerX" secondItem="9Ne-Zg-yaU" secondAttribute="centerX" constant="43" id="w6M-BF-NPC"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="0Hh-fC-2lG"/>
+                                                    <exclude reference="F8e-Gl-LeJ"/>
+                                                    <exclude reference="1FW-Fj-pcO"/>
+                                                    <exclude reference="GCp-oA-AjU"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -1116,6 +1135,8 @@
     <resources>
         <image name="appLogo" width="210" height="191"/>
         <image name="app二维码" width="190" height="190"/>
+        <image name="保存" width="47" height="47"/>
+        <image name="删除" width="47" height="47"/>
         <image name="弹出框按钮" width="50" height="27"/>
         <image name="弹出框按钮空" width="50" height="27"/>
     </resources>
