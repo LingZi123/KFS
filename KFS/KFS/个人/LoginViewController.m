@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,9 +26,12 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+
     self.navigationController.navigationBarHidden=YES;
 }
 -(void)viewWillDisappear:(BOOL)animated{
+
+
     self.navigationController.navigationBarHidden=NO;
 }
 
@@ -43,4 +46,5 @@
 -(AppDelegate *)appdelegate{
     return (AppDelegate *)[[UIApplication sharedApplication]delegate];
 }
+
 @end

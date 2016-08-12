@@ -21,6 +21,9 @@
     NSDictionary * dict=[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
     self.navigationController.navigationBar.titleTextAttributes = dict;
 
+    
+   
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonRootViewController.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : CommonRootViewController
 - (IBAction)loginBtnClick:(id)sender;
 
 @end

@@ -31,7 +31,7 @@
     [self addSubview:_titleLabel];
     
     for (int i=0; i<_btnCount; i++) {
-        UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_titleLabel.frame)+10+i*(13+10), 3, 13, 13)];
+        UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_titleLabel.frame)+8+i*(13+10), 5, 13, 13)];
         btn.tag=100+i;
         [btn setImage:[UIImage imageNamed:@"星星"] forState:UIControlStateNormal];
         [btn setImage:[UIImage imageNamed:@"星星填充"] forState:UIControlStateSelected];
