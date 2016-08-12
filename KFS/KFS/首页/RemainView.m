@@ -27,19 +27,19 @@
     headlabel.textColor=DE_BgColorPink;
     [self addSubview:headlabel];
     
-    view1=[[RemandUnitView alloc]initWithFrame:CGRectMake((CGRectGetWidth(self.frame)-240)/2, CGRectGetMaxY(headlabel.frame)+25, 100, 55)];
+    view1=[[RemandUnitView alloc]initWithFrame:CGRectMake((CGRectGetWidth(self.frame)-270)/2, CGRectGetMaxY(headlabel.frame)+20, 115, 68)];
     [view1.imageview setImage:[UIImage imageNamed:@"沙漏"]];
     view1.titleLabel.text=@"跑步";
     view1.timeLabel.text=@"5min";
     [self addSubview:view1];
     
-    view2=[[RemandUnitView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(view1.frame)+40, CGRectGetMaxY(headlabel.frame)+25, 100, 55)];
+    view2=[[RemandUnitView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(view1.frame)+40, CGRectGetMaxY(headlabel.frame)+20, 115, 68)];
     [view2.imageview setImage:[UIImage imageNamed:@"闹铃"]];
     view2.titleLabel.text=@"吃药";
     view2.timeLabel.text=@"14:00";
     [self addSubview:view2];
 
-    UIButton *settingBtn=[[UIButton alloc]initWithFrame:CGRectMake(CGRectGetWidth(self.frame)-80, CGRectGetMaxY(view2.frame)+20, 60, 25)];
+    UIButton *settingBtn=[[UIButton alloc]initWithFrame:CGRectMake(CGRectGetWidth(self.frame)-80, CGRectGetMaxY(view2.frame)+12, 60, 25)];
     [settingBtn setTitle:@"助手设置" forState:UIControlStateNormal];
     [settingBtn addTarget:self action:@selector(setBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     settingBtn.titleLabel.font=DE_Font11;

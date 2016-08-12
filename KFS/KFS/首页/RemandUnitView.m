@@ -24,7 +24,7 @@
     _imageview=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
     [self addSubview:_imageview];
     
-    _titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(30,8 , 50, 15)];
+    _titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(30,12 , 50, 15)];
     _titleLabel.font=DE_Font11;
     _titleLabel.textColor=[UIColor whiteColor];
     [self addSubview:_titleLabel];

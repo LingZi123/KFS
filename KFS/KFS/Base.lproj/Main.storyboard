@@ -336,13 +336,38 @@
                                         <rect key="frame" x="40" y="42" width="240" height="128"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.19215686269999999" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="LiZ-ky-lzZ" firstAttribute="centerY" secondItem="b3H-Vl-6us" secondAttribute="centerY" id="CPf-3Q-2qr"/>
                                     <constraint firstItem="LiZ-ky-lzZ" firstAttribute="centerX" secondItem="b3H-Vl-6us" secondAttribute="centerX" id="LJo-JO-xdP"/>
                                     <constraint firstAttribute="height" constant="200" id="mTz-b3-n88"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNY-0R-ryR">
+                                <rect key="frame" x="240" y="442" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="UAc-an-mNn"/>
+                                </constraints>
+                                <state key="normal" title="忘记密码">
+                                    <color key="titleColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kKr-78-yhV" kind="push" id="nVE-f7-twr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LJ-m3-ZvY">
+                                <rect key="frame" x="20" y="442" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="jAa-Wj-jnw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="新用户注册">
+                                    <color key="titleColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="j1q-2v-zLl" kind="push" id="Kw2-Au-7LT"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OEd-6J-mh1">
                                 <rect key="frame" x="0.0" y="284" width="320" height="128"/>
                                 <subviews>
@@ -516,33 +541,8 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNY-0R-ryR">
-                                <rect key="frame" x="240" y="442" width="60" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="UAc-an-mNn"/>
-                                </constraints>
-                                <state key="normal" title="忘记密码">
-                                    <color key="titleColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="kKr-78-yhV" kind="push" id="nVE-f7-twr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LJ-m3-ZvY">
-                                <rect key="frame" x="20" y="442" width="77" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="jAa-Wj-jnw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="新用户注册">
-                                    <color key="titleColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="j1q-2v-zLl" kind="push" id="Kw2-Au-7LT"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92549019607843142" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="b3H-Vl-6us" firstAttribute="leading" secondItem="Lew-oW-kxB" secondAttribute="leadingMargin" constant="-20" id="5CZ-fv-0oh"/>
                             <constraint firstItem="Jwc-ai-4Ax" firstAttribute="top" secondItem="cNY-0R-ryR" secondAttribute="bottom" constant="8" id="8jM-ao-LNi"/>

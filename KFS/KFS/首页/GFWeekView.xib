@@ -24,7 +24,10 @@
                                 <constraint firstAttribute="height" constant="30" id="AaG-tv-xw7"/>
                                 <constraint firstAttribute="width" constant="50" id="I6W-jI-IPf"/>
                             </constraints>
-                            <state key="normal" title="取消"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="取消" backgroundImage="弹出框按钮空">
+                                <color key="titleColor" red="0.86274509799999999" green="0.19215686269999999" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="cancelBtnClick:" destination="-1" eventType="touchUpInside" id="jGk-5G-yzw"/>
                             </connections>
@@ -35,7 +38,10 @@
                                 <constraint firstAttribute="height" constant="30" id="ePh-A6-gdh"/>
                                 <constraint firstAttribute="width" constant="50" id="tpV-eo-IWH"/>
                             </constraints>
-                            <state key="normal" title="确定"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="确定" backgroundImage="弹出框按钮">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
                             <connections>
                                 <action selector="okBtnClick:" destination="-1" eventType="touchUpInside" id="hhD-jW-ete"/>
                             </connections>
@@ -143,7 +149,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92549019610000005" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="NDQ-ci-CZf" firstAttribute="top" secondItem="AfF-kk-CTa" secondAttribute="bottom" constant="30" id="4GY-mt-RcD"/>
                 <constraint firstItem="NGe-gc-Sd3" firstAttribute="leading" secondItem="x25-a4-pKE" secondAttribute="trailing" constant="30" id="7Ox-xe-Fg7"/>
@@ -175,4 +181,8 @@
             </variation>
         </view>
     </objects>
+    <resources>
+        <image name="弹出框按钮" width="50" height="27"/>
+        <image name="弹出框按钮空" width="50" height="27"/>
+    </resources>
 </document>
