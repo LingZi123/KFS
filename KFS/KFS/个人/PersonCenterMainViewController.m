@@ -67,6 +67,7 @@
         cell.imageView.image=[UIImage imageNamed:@"关于软件"];
         cell.textLabel.text=@"关于软件";
     }
+    cell.textLabel.textColor=[UIColor darkGrayColor];
     cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }

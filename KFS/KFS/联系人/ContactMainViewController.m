@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSArray *titleArray=[[NSArray alloc]initWithObjects:@"消息",@"联系人", nil];
+    UISegmentedControl *seg=[[UISegmentedControl alloc]initWithItems:titleArray];
+    seg.selectedSegmentIndex=0;
+    self.navigationItem.titleView=seg;
 }
 
 - (void)didReceiveMemoryWarning {
