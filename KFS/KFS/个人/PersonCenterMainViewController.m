@@ -27,6 +27,7 @@
     UIImage *image=[UIImage imageWithData:imagedata];
     [headImageBtn setBackgroundImage:image forState:UIControlStateNormal];
     mytableview.tableFooterView=[[UIView alloc]init];
+    mytableview.rowHeight=54;
 
 }
 
@@ -55,13 +56,15 @@
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:dif];
     }
     if (indexPath.row==0){
-        cell.imageView.image=nil;
+        cell.imageView.image=[UIImage imageNamed:@"邀请好友"];
         cell.textLabel.text=@"邀请好友";
     }
     else if (indexPath.row==1){
+        cell.imageView.image=[UIImage imageNamed:@"反馈"];
         cell.textLabel.text=@"使用反馈";
     }
     else{
+        cell.imageView.image=[UIImage imageNamed:@"关于软件"];
         cell.textLabel.text=@"关于软件";
     }
     cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;

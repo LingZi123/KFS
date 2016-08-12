@@ -19,10 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    self.navigationItem.title=@"助手设置";
     UIBarButtonItem *rigthBar=[[UIBarButtonItem alloc]initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(addTask:)];
     self.navigationItem.rightBarButtonItem=rigthBar;
     tastTableview.tableFooterView=[[UIView alloc]init];
-    tastTableview.rowHeight=95;
+    tastTableview.rowHeight=96;
     dataMArray=[[NSMutableArray alloc]init];
     [dataMArray addObject:@"test1"];
     //注册cell
