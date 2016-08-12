@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "FirstPageMainViewController.h"
+#import "ContactMainViewController.h"
+#import "LearnMainViewController.h"
+#include "PersonCenterMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -148,11 +152,51 @@
 #pragma mark-根试图
 -(void)makeMianView{
     if (_mainTabbarv==nil||_mainTabbarv==(id)[NSNull null]) {
-        _mainTabbarv=[_storyboard instantiateViewControllerWithIdentifier:@"MainTabBarV"];
+//        _mainTabbarv=[_storyboard instantiateViewControllerWithIdentifier:@"MainTabBarV"];
+        _mainTabbarv=[[UITabBarController alloc]init];
         
+        FirstPageMainViewController *vc1=[_storyboard instantiateViewControllerWithIdentifier:@"FirstPageMainViewController"];
+        
+        ContactMainViewController *vc2=[_storyboard instantiateViewControllerWithIdentifier:@"ContactMainViewController"];
+        
+        LearnMainViewController *vc3=[_storyboard instantiateViewControllerWithIdentifier:@"LearnMainViewController"];
+        
+        PersonCenterMainViewController *vc4=[_storyboard instantiateViewControllerWithIdentifier:@"PersonCenterMainViewController"];
+        
+        UINavigationController *nav1=[[UINavigationController alloc]initWithRootViewController:vc1];
+        nav1.title=@"动态";
+        nav1.tabBarItem.title=@"首页";
+        [nav1.tabBarItem setSelectedImage:[UIImage imageNamed:@"亮动态"]];
+        [nav1.tabBarItem setImage:[UIImage imageNamed:@"灰动态"]];
+        [nav1.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:DE_BgColorPink,NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+        
+        
+        UINavigationController *nav2=[[UINavigationController alloc]initWithRootViewController:vc2];
+        nav2.title=@"联系人";
+        [nav2.tabBarItem setSelectedImage:[UIImage imageNamed:@"亮联系人"]];
+        [nav2.tabBarItem setImage:[UIImage imageNamed:@"灰联系人"]];
+        [nav2.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:DE_BgColorPink,NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+        
+        UINavigationController *nav3=[[UINavigationController alloc]initWithRootViewController:vc3];
+        nav3.title=@"学习";
+        [nav3.tabBarItem setSelectedImage:[UIImage imageNamed:@"亮学习"]];
+        [nav3.tabBarItem setImage:[UIImage imageNamed:@"灰学习"]];
+        [nav3.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:DE_BgColorPink,NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+        
+        UINavigationController *nav4=[[UINavigationController alloc]initWithRootViewController:vc4];
+        nav4.title=@"我的";
+        [nav4.tabBarItem setSelectedImage:[UIImage imageNamed:@"亮我的"]];
+        [nav4.tabBarItem setImage:[UIImage imageNamed:@"灰我的"]];
+        [nav4.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:DE_BgColorPink,NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+        
+        NSArray *titleArray=@[nav1,nav2,nav3,nav4];
+        _mainTabbarv.viewControllers=titleArray;
+        _mainTabbarv.tabBar.tintColor=DE_BgColorPink;
     }
+    
     _mainTabbarv.selectedIndex=0;
     self.window.rootViewController=_mainTabbarv;
+    
 }
 -(void)makeLoginView{
     if (_loginNav==nil||_loginNav==(id)[NSNull null]) {

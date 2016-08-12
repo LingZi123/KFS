@@ -32,6 +32,20 @@
 		A62F21941D585916003E71C7 /* MoodUnitView.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21931D585916003E71C7 /* MoodUnitView.m */; };
 		A62F21971D58671C003E71C7 /* MyStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21961D58671C003E71C7 /* MyStateView.m */; };
 		A62F219A1D586E4C003E71C7 /* SetHelperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21991D586E4C003E71C7 /* SetHelperViewController.m */; };
+		A62F21E31D5B10BA003E71C7 /* RemandSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21E11D5B10BA003E71C7 /* RemandSetTableViewCell.m */; };
+		A62F21E41D5B10BA003E71C7 /* RemandSetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A62F21E21D5B10BA003E71C7 /* RemandSetTableViewCell.xib */; };
+		A6594B851D5C2A1E0007C4A3 /* GFWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B841D5C2A1E0007C4A3 /* GFWeekView.m */; };
+		A6594B871D5C2A360007C4A3 /* GFWeekView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6594B861D5C2A360007C4A3 /* GFWeekView.xib */; };
+		A6594B8B1D5C7EAD0007C4A3 /* CommonRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B8A1D5C7EAD0007C4A3 /* CommonRootViewController.m */; };
+		A6C672C91D5C102100EDCC56 /* AddRemandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672C81D5C102100EDCC56 /* AddRemandViewController.m */; };
+		A6C672D71D5C10B900EDCC56 /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672CC1D5C10B900EDCC56 /* LewPopupBackgroundView.m */; };
+		A6C672D81D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672CE1D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m */; };
+		A6C672D91D5C10B900EDCC56 /* LewPopupViewAnimationFade.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672D01D5C10B900EDCC56 /* LewPopupViewAnimationFade.m */; };
+		A6C672DA1D5C10B900EDCC56 /* LewPopupViewAnimationSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672D21D5C10B900EDCC56 /* LewPopupViewAnimationSlide.m */; };
+		A6C672DB1D5C10B900EDCC56 /* LewPopupViewAnimationSpring.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672D41D5C10B900EDCC56 /* LewPopupViewAnimationSpring.m */; };
+		A6C672DC1D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672D61D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m */; };
+		A6C672DF1D5C113800EDCC56 /* GFDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672DE1D5C113800EDCC56 /* GFDateView.m */; };
+		A6C672E11D5C114B00EDCC56 /* GFDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C672E01D5C114B00EDCC56 /* GFDateView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +115,31 @@
 		A62F21961D58671C003E71C7 /* MyStateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStateView.m; sourceTree = "<group>"; };
 		A62F21981D586E4C003E71C7 /* SetHelperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetHelperViewController.h; sourceTree = "<group>"; };
 		A62F21991D586E4C003E71C7 /* SetHelperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetHelperViewController.m; sourceTree = "<group>"; };
+		A62F21E01D5B10BA003E71C7 /* RemandSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemandSetTableViewCell.h; sourceTree = "<group>"; };
+		A62F21E11D5B10BA003E71C7 /* RemandSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemandSetTableViewCell.m; sourceTree = "<group>"; };
+		A62F21E21D5B10BA003E71C7 /* RemandSetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemandSetTableViewCell.xib; sourceTree = "<group>"; };
+		A6594B831D5C2A1E0007C4A3 /* GFWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFWeekView.h; sourceTree = "<group>"; };
+		A6594B841D5C2A1E0007C4A3 /* GFWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFWeekView.m; sourceTree = "<group>"; };
+		A6594B861D5C2A360007C4A3 /* GFWeekView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFWeekView.xib; sourceTree = "<group>"; };
+		A6594B891D5C7EAD0007C4A3 /* CommonRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonRootViewController.h; sourceTree = "<group>"; };
+		A6594B8A1D5C7EAD0007C4A3 /* CommonRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonRootViewController.m; sourceTree = "<group>"; };
+		A6C672C71D5C102100EDCC56 /* AddRemandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRemandViewController.h; sourceTree = "<group>"; };
+		A6C672C81D5C102100EDCC56 /* AddRemandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRemandViewController.m; sourceTree = "<group>"; };
+		A6C672CB1D5C10B900EDCC56 /* LewPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupBackgroundView.h; sourceTree = "<group>"; };
+		A6C672CC1D5C10B900EDCC56 /* LewPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupBackgroundView.m; sourceTree = "<group>"; };
+		A6C672CD1D5C10B900EDCC56 /* LewPopupViewAnimationDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationDrop.h; sourceTree = "<group>"; };
+		A6C672CE1D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationDrop.m; sourceTree = "<group>"; };
+		A6C672CF1D5C10B900EDCC56 /* LewPopupViewAnimationFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationFade.h; sourceTree = "<group>"; };
+		A6C672D01D5C10B900EDCC56 /* LewPopupViewAnimationFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationFade.m; sourceTree = "<group>"; };
+		A6C672D11D5C10B900EDCC56 /* LewPopupViewAnimationSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationSlide.h; sourceTree = "<group>"; };
+		A6C672D21D5C10B900EDCC56 /* LewPopupViewAnimationSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSlide.m; sourceTree = "<group>"; };
+		A6C672D31D5C10B900EDCC56 /* LewPopupViewAnimationSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationSpring.h; sourceTree = "<group>"; };
+		A6C672D41D5C10B900EDCC56 /* LewPopupViewAnimationSpring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSpring.m; sourceTree = "<group>"; };
+		A6C672D51D5C10B900EDCC56 /* UIViewController+LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LewPopupViewController.h"; sourceTree = "<group>"; };
+		A6C672D61D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LewPopupViewController.m"; sourceTree = "<group>"; };
+		A6C672DD1D5C113800EDCC56 /* GFDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFDateView.h; sourceTree = "<group>"; };
+		A6C672DE1D5C113800EDCC56 /* GFDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFDateView.m; sourceTree = "<group>"; };
+		A6C672E01D5C114B00EDCC56 /* GFDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFDateView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +310,8 @@
 		A62F217D1D5430DA003E71C7 /* 公共操作类 */ = {
 			isa = PBXGroup;
 			children = (
+				A6594B881D5C7E900007C4A3 /* Controller */,
+				A6C672CA1D5C10B900EDCC56 /* popupViewController */,
 			);
 			path = "公共操作类";
 			sourceTree = "<group>";
@@ -282,6 +323,8 @@
 				A62F215E1D5186BB003E71C7 /* FirstPageMainViewController.m */,
 				A62F21981D586E4C003E71C7 /* SetHelperViewController.h */,
 				A62F21991D586E4C003E71C7 /* SetHelperViewController.m */,
+				A6C672C71D5C102100EDCC56 /* AddRemandViewController.h */,
+				A6C672C81D5C102100EDCC56 /* AddRemandViewController.m */,
 			);
 			name = " Controller";
 			sourceTree = "<group>";
@@ -299,8 +342,45 @@
 				A62F21931D585916003E71C7 /* MoodUnitView.m */,
 				A62F21951D58671C003E71C7 /* MyStateView.h */,
 				A62F21961D58671C003E71C7 /* MyStateView.m */,
+				A62F21E01D5B10BA003E71C7 /* RemandSetTableViewCell.h */,
+				A62F21E11D5B10BA003E71C7 /* RemandSetTableViewCell.m */,
+				A62F21E21D5B10BA003E71C7 /* RemandSetTableViewCell.xib */,
+				A6C672DD1D5C113800EDCC56 /* GFDateView.h */,
+				A6C672DE1D5C113800EDCC56 /* GFDateView.m */,
+				A6C672E01D5C114B00EDCC56 /* GFDateView.xib */,
+				A6594B831D5C2A1E0007C4A3 /* GFWeekView.h */,
+				A6594B841D5C2A1E0007C4A3 /* GFWeekView.m */,
+				A6594B861D5C2A360007C4A3 /* GFWeekView.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		A6594B881D5C7E900007C4A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6594B891D5C7EAD0007C4A3 /* CommonRootViewController.h */,
+				A6594B8A1D5C7EAD0007C4A3 /* CommonRootViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A6C672CA1D5C10B900EDCC56 /* popupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A6C672CB1D5C10B900EDCC56 /* LewPopupBackgroundView.h */,
+				A6C672CC1D5C10B900EDCC56 /* LewPopupBackgroundView.m */,
+				A6C672CD1D5C10B900EDCC56 /* LewPopupViewAnimationDrop.h */,
+				A6C672CE1D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m */,
+				A6C672CF1D5C10B900EDCC56 /* LewPopupViewAnimationFade.h */,
+				A6C672D01D5C10B900EDCC56 /* LewPopupViewAnimationFade.m */,
+				A6C672D11D5C10B900EDCC56 /* LewPopupViewAnimationSlide.h */,
+				A6C672D21D5C10B900EDCC56 /* LewPopupViewAnimationSlide.m */,
+				A6C672D31D5C10B900EDCC56 /* LewPopupViewAnimationSpring.h */,
+				A6C672D41D5C10B900EDCC56 /* LewPopupViewAnimationSpring.m */,
+				A6C672D51D5C10B900EDCC56 /* UIViewController+LewPopupViewController.h */,
+				A6C672D61D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m */,
+			);
+			path = popupViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,9 +487,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62F21361D518502003E71C7 /* LaunchScreen.storyboard in Resources */,
+				A6C672E11D5C114B00EDCC56 /* GFDateView.xib in Resources */,
 				A62F217C1D51E24D003E71C7 /* TableViewCell.xib in Resources */,
 				A62F21331D518502003E71C7 /* Assets.xcassets in Resources */,
+				A62F21E41D5B10BA003E71C7 /* RemandSetTableViewCell.xib in Resources */,
 				A62F212E1D518502003E71C7 /* Main.storyboard in Resources */,
+				A6594B871D5C2A360007C4A3 /* GFWeekView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,14 +518,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62F21621D5186F3003E71C7 /* ContactMainViewController.m in Sources */,
+				A6C672C91D5C102100EDCC56 /* AddRemandViewController.m in Sources */,
 				A62F21761D519DE1003E71C7 /* ForgetPwdViewController.m in Sources */,
+				A6C672D81D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m in Sources */,
 				A62F21971D58671C003E71C7 /* MyStateView.m in Sources */,
+				A6C672DA1D5C10B900EDCC56 /* LewPopupViewAnimationSlide.m in Sources */,
 				A62F216E1D519522003E71C7 /* LoginViewController.m in Sources */,
 				A62F218E1D582D8B003E71C7 /* RemainView.m in Sources */,
+				A6C672DB1D5C10B900EDCC56 /* LewPopupViewAnimationSpring.m in Sources */,
 				A62F215F1D5186BB003E71C7 /* FirstPageMainViewController.m in Sources */,
 				A62F21311D518502003E71C7 /* KFS.xcdatamodeld in Sources */,
+				A6C672D71D5C10B900EDCC56 /* LewPopupBackgroundView.m in Sources */,
+				A6C672DC1D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m in Sources */,
+				A6594B8B1D5C7EAD0007C4A3 /* CommonRootViewController.m in Sources */,
+				A6C672DF1D5C113800EDCC56 /* GFDateView.m in Sources */,
+				A6594B851D5C2A1E0007C4A3 /* GFWeekView.m in Sources */,
 				A62F21731D519DD4003E71C7 /* RegisterViewController.m in Sources */,
 				A62F21281D518502003E71C7 /* AppDelegate.m in Sources */,
+				A62F21E31D5B10BA003E71C7 /* RemandSetTableViewCell.m in Sources */,
+				A6C672D91D5C10B900EDCC56 /* LewPopupViewAnimationFade.m in Sources */,
 				A62F218B1D582C18003E71C7 /* MoodView.m in Sources */,
 				A62F21941D585916003E71C7 /* MoodUnitView.m in Sources */,
 				A62F21251D518502003E71C7 /* main.m in Sources */,

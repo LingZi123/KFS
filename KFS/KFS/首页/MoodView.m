@@ -20,33 +20,38 @@
 
 -(void)makeView{
         //获取位置
-    UIImageView *locationImage=[[UIImageView alloc]initWithFrame:CGRectMake(30, 10, 25, 25)];
-    [locationImage setImage:[UIImage imageNamed:@""]];
-    locationImage.backgroundColor=[UIColor redColor];
+    UIImageView *locationImage=[[UIImageView alloc]initWithFrame:CGRectMake(30, 10, 12.5, 19.5)];
+    [locationImage setImage:[UIImage imageNamed:@"定位"]];
     [self addSubview:locationImage];
     
     UILabel *locationLabel=[[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(locationImage.frame)+10, 10, 200, 25)];
-    locationLabel.font=[UIFont systemFontOfSize:14];
+    locationLabel.font=DE_Font11;
     locationLabel.text=@"重庆市北部新区木星科技大厦";
+    locationLabel.textColor=DE_BgColorPink;
     [self addSubview:locationLabel];
     
-    xinqingview=[[MoodUnitView alloc]initWithFrame:CGRectMake(65, CGRectGetMaxY(locationLabel.frame)+20, self.frame.size.width-130, 25) count:5 subimagename:@""];
+    xinqingview=[[MoodUnitView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width-130, 25) count:5 subimagename:@""];
     xinqingview.titleLabel.text=@"心情：";
+    xinqingview.center=CGPointMake(self.center.x, CGRectGetMaxY(locationLabel.frame)+32);
+    [xinqingview.headImageView setImage:[UIImage imageNamed:@"心情"]];
     [self addSubview:xinqingview];
     
-    jiankangview=[[MoodUnitView alloc]initWithFrame:CGRectMake(65, CGRectGetMaxY(xinqingview.frame)+12,self.frame.size.width-130, 25) count:5 subimagename:@""];
+    jiankangview=[[MoodUnitView alloc]initWithFrame:CGRectMake(0, 0,self.frame.size.width-130, 25) count:5 subimagename:@""];
+    [jiankangview.headImageView setImage:[UIImage imageNamed:@"健康"]];
     jiankangview.titleLabel.text=@"健康：";
+    jiankangview.center=CGPointMake(self.center.x, CGRectGetMaxY(xinqingview.frame)+24);
     [self addSubview:jiankangview];
     
     UIButton *chakanBtn=[[UIButton alloc]initWithFrame:CGRectMake(CGRectGetWidth(self.frame)-80, CGRectGetMaxY(jiankangview.frame)+8, 60, 25)];
     [chakanBtn setTitle:@"查看评分" forState:UIControlStateNormal];
     [chakanBtn addTarget:self action:@selector(seeGrade:) forControlEvents:UIControlEventTouchUpInside];
-    chakanBtn.titleLabel.font=[UIFont systemFontOfSize:14];
-    chakanBtn.backgroundColor=[UIColor redColor];
+    [chakanBtn setBackgroundImage:[UIImage imageNamed:@"动态按钮"] forState:UIControlStateNormal];
+    chakanBtn.titleLabel.font=DE_Font11;
+     [chakanBtn setTitleColor:DE_BgColorPink forState:UIControlStateNormal];
     [self addSubview:chakanBtn];
     
     UIView *seg1=[[UIView alloc]initWithFrame:CGRectMake(8, CGRectGetHeight(self.frame)-1, CGRectGetWidth(self.frame)-16, 1)];
-    seg1.backgroundColor=[UIColor lightGrayColor];
+    seg1.backgroundColor=DE_SegColorGray;
     [self addSubview:seg1];
 
 }

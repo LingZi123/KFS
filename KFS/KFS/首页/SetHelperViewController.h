@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RemandSetTableViewCell.h"
 
-@interface SetHelperViewController : UIViewController
+@interface SetHelperViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 {
     
     __weak IBOutlet UITableView *tastTableview;
+    NSMutableArray *dataMArray;//数据
 }
 
 @end

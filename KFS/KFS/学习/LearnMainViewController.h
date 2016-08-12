@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonRootViewController.h"
 
-@interface LearnMainViewController : UIViewController
+@interface LearnMainViewController :CommonRootViewController
 
 @end

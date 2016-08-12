@@ -12,5 +12,6 @@
 
 @property(nonatomic,retain) UILabel *titleLabel;//标题label
 @property(nonatomic,retain)UILabel *timeLabel;//时间label
+@property(nonatomic,retain)UIImageView *imageview;
 
 @end

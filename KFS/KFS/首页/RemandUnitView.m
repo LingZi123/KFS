@@ -21,14 +21,11 @@
 
 -(void)makeView{
 
-    self.backgroundColor=[UIColor redColor];
-    UIImageView *imageview=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
-//    [imageview setImage:[UIImage imageNamed:@""]];
-    [self addSubview:imageview];
+    _imageview=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
+    [self addSubview:_imageview];
     
     _titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(30,8 , 50, 15)];
-//    labe1.text=@"跑步";
-    _titleLabel.font=[UIFont systemFontOfSize:12];
+    _titleLabel.font=DE_Font11;
     _titleLabel.textColor=[UIColor whiteColor];
     [self addSubview:_titleLabel];
     
@@ -38,8 +35,7 @@
     
     
     _timeLabel=[[UILabel alloc]initWithFrame:CGRectMake(30,CGRectGetMaxY(seg.frame)+3, 50, 15)];
-    //    labe1.text=@"跑步";
-    _timeLabel.font=[UIFont systemFontOfSize:12];
+    _timeLabel.font=DE_Font11;
     _timeLabel.textColor=[UIColor whiteColor];
     [self addSubview:_timeLabel];
     

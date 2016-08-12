@@ -10,8 +10,9 @@
 #import "MoodView.h"
 #import "RemainView.h"
 #import "MyStateView.h"
+#import "CommonRootViewController.h"
 
-@interface FirstPageMainViewController : UIViewController<RemainViewDelegate,MoodViewDelegate>
+@interface FirstPageMainViewController : CommonRootViewController<RemainViewDelegate,MoodViewDelegate>
 {
     MoodView *firstView;
     RemainView *remandView;

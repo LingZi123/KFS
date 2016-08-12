@@ -21,9 +21,9 @@
 -(void)makeView{
     
     UILabel *headlabel=[[UILabel alloc]initWithFrame:CGRectMake(20, 10, 200, 21)];
-    headlabel.font=DE_Font14;
+    headlabel.font=DE_Font11;
     headlabel.text=@"我的状态";
-    headlabel.textColor=[UIColor redColor];
+    headlabel.textColor=DE_BgColorPink;
     [self addSubview:headlabel];
     
     UIImageView *image=[[UIImageView alloc]initWithFrame:CGRectMake(80, CGRectGetMaxY(headlabel.frame), CGRectGetWidth(self.frame)-160, 85)];
@@ -32,12 +32,13 @@
 
     UIButton *chakanBtn=[[UIButton alloc]initWithFrame:CGRectMake(CGRectGetWidth(self.frame)-80, CGRectGetMaxY(image.frame)+8, 60, 25)];
     [chakanBtn setTitle:@"查看历史" forState:UIControlStateNormal];
-    chakanBtn.titleLabel.font=[UIFont systemFontOfSize:14];
-    chakanBtn.backgroundColor=[UIColor redColor];
+    chakanBtn.titleLabel.font=DE_Font11;
+    [chakanBtn setBackgroundImage:[UIImage imageNamed:@"动态按钮"] forState:UIControlStateNormal];
+    [chakanBtn setTitleColor:DE_BgColorPink forState:UIControlStateNormal];
     [self addSubview:chakanBtn];
     
     UIView *seg1=[[UIView alloc]initWithFrame:CGRectMake(8, CGRectGetHeight(self.frame)-1, CGRectGetWidth(self.frame)-16, 1)];
-    seg1.backgroundColor=[UIColor lightGrayColor];
+    seg1.backgroundColor=DE_SegColorGray;
 //    [self addSubview:seg1];
     
 }

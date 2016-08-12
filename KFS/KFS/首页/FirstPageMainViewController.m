@@ -28,7 +28,7 @@
 
 -(void)makeView{
     UIScrollView *bgview=[[UIScrollView alloc]initWithFrame:self.view.frame];
-    bgview.contentSize=self.view.frame.size;
+    bgview.contentSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+65);
     [self.view addSubview:bgview];
     //第一行面板
     firstView=[[MoodView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(bgview.frame), 160)];
@@ -45,7 +45,7 @@
     [bgview addSubview:mystateView];
     
     UIImageView *endImage=[[UIImageView alloc]initWithFrame:CGRectMake(2, CGRectGetMaxY(mystateView.frame)+5, CGRectGetWidth(bgview.frame)-4, 65)];
-    [endImage setImage:[UIImage imageNamed:@"mytasktest"]];
+    [endImage setImage:[UIImage imageNamed:@"任务"]];
     [bgview addSubview:endImage];
     
 }

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonRootViewController.h"
 
-@interface ContactMainViewController : UIViewController
+@interface ContactMainViewController :CommonRootViewController
 
 @end
