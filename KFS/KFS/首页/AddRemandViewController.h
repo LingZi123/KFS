@@ -14,6 +14,7 @@
     __weak IBOutlet UIButton *dateBtn;
     __weak IBOutlet UIButton *timeBtn;
     __weak IBOutlet UIButton *repeatBtn;
+    __weak IBOutlet UITextField *nameTextField;
 }
 - (IBAction)dateBtnClick:(id)sender;
 

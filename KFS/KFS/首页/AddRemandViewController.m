@@ -27,15 +27,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [nameTextField resignFirstResponder];
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
+
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+
     return 6;
 }
 
@@ -95,7 +98,9 @@
 
 #pragma mark-动作
 - (IBAction)dateBtnClick:(id)sender {
-    GFDateView *v=[GFDateView defaultPopupView:CGRectGetWidth(self.view.frame)];
+    [nameTextField resignFirstResponder];
+    GFDateView *v=[GFDateView defaultPopupView:CGRectGetWidth(self.view.frame) datemode:UIDatePickerModeDate];
+    v.titleLabel.text=@"添加日期";
     v.parentVC=self;
     v.delegate=self;
     [self lew_presentPopupView:v position:1  animation:[LewPopupViewAnimationSpring new] dismissed:^{
@@ -105,9 +110,18 @@
 }
 
 - (IBAction)timeBtnClick:(id)sender {
+    [nameTextField resignFirstResponder];
+    GFDateView *v=[GFDateView defaultPopupView:CGRectGetWidth(self.view.frame) datemode:UIDatePickerModeTime];
+    v.titleLabel.text=@"添加时间";
+    v.parentVC=self;
+    v.delegate=self;
+    [self lew_presentPopupView:v position:1  animation:[LewPopupViewAnimationSpring new] dismissed:^{
+        
+    }];
 }
 
 - (IBAction)repeatBtnClick:(id)sender {
+    [nameTextField resignFirstResponder];
     GFWeekView *v=[GFWeekView defaultPopupView:CGRectGetWidth(self.view.frame)];
     v.parentVC=self;
     v.delegate=self;
@@ -123,6 +137,10 @@
 #pragma mark-GFDateViewDelegate
 -(void)didDateSelectedFinished:(NSDate *)date dateStr:(NSString *)dateStr{
     [dateBtn setTitle:dateStr forState:UIControlStateNormal];
+}
+-(void)didTimeSelectedFinished:(NSDate *)date dateStr:(NSString *)dateStr{
+    [timeBtn setTitle:dateStr forState:UIControlStateNormal];
+    
 }
 #pragma mrak-GFWeekViewDelegate
 -(void)didWeekSelectedFinished:(NSMutableArray *)array weekStr:(NSString *)weekStr{

@@ -12,7 +12,7 @@
 @implementation GFDateView
 
 
--(instancetype)initWithFrame:(CGRect)frame{
+-(instancetype)initWithFrame:(CGRect)frame datemode:(UIDatePickerMode)datemode{
     self=[super initWithFrame:frame];
     if (self) {
         
@@ -21,17 +21,20 @@
         [self addSubview:_innerView];
         NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];//设置为中文
         datePickview.locale = locale;
-        
-//        datePickview.datePickerMode
+        dateMode=datemode;
+        datePickview.datePickerMode=dateMode;
         dateFormatter = [[NSDateFormatter alloc] init];//设置输出的格式
-        [dateFormatter setDateFormat:@"yyyy-MM-dd"];//四个y就是2014－10-15，2个y就是14-10-15，这是输出字符串的时候用到的
-       
-
+        if (dateMode==UIDatePickerModeDate) {
+            [dateFormatter setDateFormat:@"yyyy-MM-dd"];//四个y就是2014－10-15，2个y就是14-10-15，这是输出字符串的时候用到的
+        }
+        else{
+            [dateFormatter setDateFormat:@"HH:mm"];
+        }
     }
     return self;
 }
-+ (instancetype)defaultPopupView:(CGFloat)width{
-    GFDateView *v=[[GFDateView alloc]initWithFrame:CGRectMake(0, 0, width, 230)];
++ (instancetype)defaultPopupView:(CGFloat)width datemode:(UIDatePickerMode)datemode{
+    GFDateView *v=[[GFDateView alloc]initWithFrame:CGRectMake(0, 0, width, 230) datemode:datemode];
     return v;
 }
 
@@ -39,7 +42,14 @@
     
     NSDate *date=datePickview.date;
     NSString *datestr=[dateFormatter stringFromDate:date];
-    [self.delegate didDateSelectedFinished:date dateStr:datestr];
+    
+    if (dateMode==UIDatePickerModeTime) {
+        [self.delegate didTimeSelectedFinished:date dateStr:datestr];
+    }
+    else{
+         [self.delegate didDateSelectedFinished:date dateStr:datestr];
+    }
+   
     NSLog(@"%@",datestr);
     
     [_parentVC lew_dismissPopupViewWithanimation:[LewPopupViewAnimationSpring new]];

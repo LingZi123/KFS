@@ -10,7 +10,9 @@
 
 @protocol GFDateViewDelegate <NSObject>
 
+@optional
 -(void)didDateSelectedFinished:(NSDate *)date dateStr:(NSString *)dateStr;
+-(void)didTimeSelectedFinished:(NSDate *)date dateStr:(NSString *)dateStr;
 
 @end
 
@@ -18,17 +20,19 @@
 {
     
     __weak IBOutlet UIDatePicker *datePickview;
+    UIDatePickerMode dateMode;
     NSDateFormatter *dateFormatter;
 }
 
 @property (nonatomic, strong)IBOutlet UIView *innerView;
 @property (nonatomic, weak)UIViewController *parentVC;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property(nonatomic,assign)id<GFDateViewDelegate> delegate;
 
 
 - (IBAction)okBtnClick:(id)sender;
 
 - (IBAction)cancelBtnClick:(id)sender;
-+ (instancetype)defaultPopupView:(CGFloat)width;
++ (instancetype)defaultPopupView:(CGFloat)width datemode:(UIDatePickerMode)datemode;
 
 @end

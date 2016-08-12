@@ -86,7 +86,7 @@
         <scene sceneID="yTz-fp-5aP">
             <objects>
                 <tableViewController storyboardIdentifier="AddRemandViewController" id="6td-Ar-3nG" customClass="AddRemandViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eZE-uV-wCK">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eZE-uV-wCK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,7 +101,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KV3-Uz-AEL">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入名称" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KV3-Uz-AEL">
                                                     <rect key="frame" x="63" y="15" width="249" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -118,6 +118,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="g7q-ue-ffE" firstAttribute="leading" secondItem="PUm-EG-fcg" secondAttribute="leadingMargin" constant="10" id="J5X-Ko-560"/>
+                                                <constraint firstItem="KV3-Uz-AEL" firstAttribute="centerY" secondItem="PUm-EG-fcg" secondAttribute="centerY" id="KMy-ne-0Jv"/>
                                                 <constraint firstItem="g7q-ue-ffE" firstAttribute="centerY" secondItem="PUm-EG-fcg" secondAttribute="centerY" id="YGE-42-Db0"/>
                                                 <constraint firstItem="KV3-Uz-AEL" firstAttribute="trailing" secondItem="PUm-EG-fcg" secondAttribute="trailingMargin" id="g1T-uL-Uag"/>
                                                 <constraint firstItem="KV3-Uz-AEL" firstAttribute="leading" secondItem="PUm-EG-fcg" secondAttribute="leadingMargin" constant="55" id="nqR-NI-bGK"/>
@@ -332,6 +333,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="dateBtn" destination="L1T-AR-GTh" id="mCE-hG-Pha"/>
+                        <outlet property="nameTextField" destination="KV3-Uz-AEL" id="Dmt-5T-k6Q"/>
                         <outlet property="repeatBtn" destination="WBE-6A-P2d" id="OEO-kS-JLf"/>
                         <outlet property="timeBtn" destination="YNE-S5-U0t" id="8kL-Gp-HnE"/>
                     </connections>
