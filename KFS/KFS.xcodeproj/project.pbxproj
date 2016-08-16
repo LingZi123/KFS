@@ -55,6 +55,10 @@
 		A6C672DC1D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672D61D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m */; };
 		A6C672DF1D5C113800EDCC56 /* GFDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672DE1D5C113800EDCC56 /* GFDateView.m */; };
 		A6C672E11D5C114B00EDCC56 /* GFDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C672E01D5C114B00EDCC56 /* GFDateView.xib */; };
+		A6DCCE7F1D62C0D4006A0CAF /* LearnMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE7D1D62C0D4006A0CAF /* LearnMainCell.m */; };
+		A6DCCE801D62C0D4006A0CAF /* LearnMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6DCCE7E1D62C0D4006A0CAF /* LearnMainCell.xib */; };
+		A6DCCE841D62C127006A0CAF /* LearnSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE821D62C127006A0CAF /* LearnSubCell.m */; };
+		A6DCCE851D62C127006A0CAF /* LearnSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6DCCE831D62C127006A0CAF /* LearnSubCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +172,12 @@
 		A6C672DD1D5C113800EDCC56 /* GFDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFDateView.h; sourceTree = "<group>"; };
 		A6C672DE1D5C113800EDCC56 /* GFDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFDateView.m; sourceTree = "<group>"; };
 		A6C672E01D5C114B00EDCC56 /* GFDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFDateView.xib; sourceTree = "<group>"; };
+		A6DCCE7C1D62C0D4006A0CAF /* LearnMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnMainCell.h; sourceTree = "<group>"; };
+		A6DCCE7D1D62C0D4006A0CAF /* LearnMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnMainCell.m; sourceTree = "<group>"; };
+		A6DCCE7E1D62C0D4006A0CAF /* LearnMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnMainCell.xib; sourceTree = "<group>"; };
+		A6DCCE811D62C127006A0CAF /* LearnSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnSubCell.h; sourceTree = "<group>"; };
+		A6DCCE821D62C127006A0CAF /* LearnSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnSubCell.m; sourceTree = "<group>"; };
+		A6DCCE831D62C127006A0CAF /* LearnSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnSubCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,8 +280,8 @@
 		A62F215A1D518657003E71C7 /* 学习 */ = {
 			isa = PBXGroup;
 			children = (
-				A62F21631D518703003E71C7 /* LearnMainViewController.h */,
-				A62F21641D518703003E71C7 /* LearnMainViewController.m */,
+				A6DCCE7B1D62C09D006A0CAF /* View */,
+				A6DCCE7A1D62C08D006A0CAF /* Controller */,
 			);
 			path = "学习";
 			sourceTree = "<group>";
@@ -438,6 +448,28 @@
 			path = popupViewController;
 			sourceTree = "<group>";
 		};
+		A6DCCE7A1D62C08D006A0CAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A62F21631D518703003E71C7 /* LearnMainViewController.h */,
+				A62F21641D518703003E71C7 /* LearnMainViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A6DCCE7B1D62C09D006A0CAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6DCCE7C1D62C0D4006A0CAF /* LearnMainCell.h */,
+				A6DCCE7D1D62C0D4006A0CAF /* LearnMainCell.m */,
+				A6DCCE7E1D62C0D4006A0CAF /* LearnMainCell.xib */,
+				A6DCCE811D62C127006A0CAF /* LearnSubCell.h */,
+				A6DCCE821D62C127006A0CAF /* LearnSubCell.m */,
+				A6DCCE831D62C127006A0CAF /* LearnSubCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -542,10 +574,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62F21361D518502003E71C7 /* LaunchScreen.storyboard in Resources */,
+				A6DCCE801D62C0D4006A0CAF /* LearnMainCell.xib in Resources */,
 				A6C672E11D5C114B00EDCC56 /* GFDateView.xib in Resources */,
 				A62F217C1D51E24D003E71C7 /* TableViewCell.xib in Resources */,
 				A62F21331D518502003E71C7 /* Assets.xcassets in Resources */,
 				A62F21E41D5B10BA003E71C7 /* RemandSetTableViewCell.xib in Resources */,
+				A6DCCE851D62C127006A0CAF /* LearnSubCell.xib in Resources */,
 				A62F212E1D518502003E71C7 /* Main.storyboard in Resources */,
 				A6594B871D5C2A360007C4A3 /* GFWeekView.xib in Resources */,
 			);
@@ -573,6 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62F21621D5186F3003E71C7 /* ContactMainViewController.m in Sources */,
+				A6DCCE7F1D62C0D4006A0CAF /* LearnMainCell.m in Sources */,
 				A6594BAA1D61A6040007C4A3 /* JHShowInfoView.m in Sources */,
 				A6C672C91D5C102100EDCC56 /* AddRemandViewController.m in Sources */,
 				A62F21761D519DE1003E71C7 /* ForgetPwdViewController.m in Sources */,
@@ -597,6 +632,7 @@
 				A6594B851D5C2A1E0007C4A3 /* GFWeekView.m in Sources */,
 				A62F21731D519DD4003E71C7 /* RegisterViewController.m in Sources */,
 				A62F21281D518502003E71C7 /* AppDelegate.m in Sources */,
+				A6DCCE841D62C127006A0CAF /* LearnSubCell.m in Sources */,
 				A62F21E31D5B10BA003E71C7 /* RemandSetTableViewCell.m in Sources */,
 				A6C672D91D5C10B900EDCC56 /* LewPopupViewAnimationFade.m in Sources */,
 				A6594BA91D61A6040007C4A3 /* JHRingChart.m in Sources */,
@@ -753,6 +789,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = KFS/KFSPrefixHeader.pch;
 				INFOPLIST_FILE = KFS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -765,6 +802,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = KFS/KFSPrefixHeader.pch;
 				INFOPLIST_FILE = KFS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFS;
 				PRODUCT_NAME = "$(TARGET_NAME)";

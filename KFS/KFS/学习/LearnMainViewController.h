@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "CommonRootViewController.h"
 
-@interface LearnMainViewController :CommonRootViewController
-
+@interface LearnMainViewController :CommonRootViewController<UITableViewDelegate,UITableViewDataSource>
+{
+    
+    __weak IBOutlet UITableView *mytableView;
+    NSMutableArray *dataArray;
+}
 @end
