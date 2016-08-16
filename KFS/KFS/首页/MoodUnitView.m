@@ -22,19 +22,19 @@
 
 -(void)makeView{
     
-    _headImageView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 4, 19, 16.5)];
+    _headImageView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 32, 26)];
     [self addSubview:_headImageView];
     
-    _titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_headImageView.frame)+8, 2, 43, 21)];
+    _titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_headImageView.frame)+8, 2.5, 35, 21)];
     _titleLabel.font=DE_Font11;
     _titleLabel.textColor=DE_BgColorPink;
     [self addSubview:_titleLabel];
     
     for (int i=0; i<_btnCount; i++) {
-        UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_titleLabel.frame)+8+i*(13+10), 5, 13, 13)];
+        UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMaxX(_titleLabel.frame)+8+i*(25+6), 3, 20, 19.2)];
         btn.tag=100+i;
-        [btn setImage:[UIImage imageNamed:@"星星"] forState:UIControlStateNormal];
-        [btn setImage:[UIImage imageNamed:@"星星填充"] forState:UIControlStateSelected];
+        [btn setImage:[UIImage imageNamed:@"星星2"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"星星填充2"] forState:UIControlStateSelected];
         [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
     }
@@ -43,6 +43,17 @@
 }
 
 -(void)btnClick:(UIButton *)sender{
-    
+    if (sender.selected) {
+        sender.selected=NO;
+        return;
+    }
+    NSInteger i=sender.tag-100;
+    sender.selected=YES;
+    for(int j=0;j<i;j++)
+    {
+        UIButton *btn=(UIButton *)[self viewWithTag:100+j];
+        btn.selected=YES;
+    }
 }
+
 @end

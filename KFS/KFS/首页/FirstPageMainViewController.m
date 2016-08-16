@@ -28,10 +28,10 @@
 
 -(void)makeView{
     UIScrollView *bgview=[[UIScrollView alloc]initWithFrame:self.view.frame];
-    bgview.contentSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+65);
+    bgview.contentSize=CGSizeMake(self.view.frame.size.width, self.view.frame.size.height+115);
     [self.view addSubview:bgview];
     //第一行面板
-    firstView=[[MoodView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(bgview.frame), 160)];
+    firstView=[[MoodView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(bgview.frame), 165)];
     firstView.delegate=self;
     [bgview addSubview:firstView];
     
@@ -41,7 +41,7 @@
     [bgview addSubview:remandView];
     //我的状态
     
-    mystateView=[[MyStateView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(remandView.frame)+1, CGRectGetWidth(bgview.frame), 160)];
+    mystateView=[[MyStateView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(remandView.frame)+1, CGRectGetWidth(bgview.frame), 200)];
     [bgview addSubview:mystateView];
     
     UIImageView *endImage=[[UIImageView alloc]initWithFrame:CGRectMake(2, CGRectGetMaxY(mystateView.frame)+5, CGRectGetWidth(bgview.frame)-4, 65)];

@@ -18,7 +18,6 @@
 		A62F215F1D5186BB003E71C7 /* FirstPageMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F215E1D5186BB003E71C7 /* FirstPageMainViewController.m */; };
 		A62F21621D5186F3003E71C7 /* ContactMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21611D5186F3003E71C7 /* ContactMainViewController.m */; };
 		A62F21651D518703003E71C7 /* LearnMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21641D518703003E71C7 /* LearnMainViewController.m */; };
-		A62F21681D518716003E71C7 /* PersonCenterMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21671D518716003E71C7 /* PersonCenterMainViewController.m */; };
 		A62F216E1D519522003E71C7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F216D1D519522003E71C7 /* LoginViewController.m */; };
 		A62F21731D519DD4003E71C7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21721D519DD4003E71C7 /* RegisterViewController.m */; };
 		A62F21761D519DE1003E71C7 /* ForgetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62F21751D519DE1003E71C7 /* ForgetPwdViewController.m */; };
@@ -37,6 +36,16 @@
 		A6594B851D5C2A1E0007C4A3 /* GFWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B841D5C2A1E0007C4A3 /* GFWeekView.m */; };
 		A6594B871D5C2A360007C4A3 /* GFWeekView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6594B861D5C2A360007C4A3 /* GFWeekView.xib */; };
 		A6594B8B1D5C7EAD0007C4A3 /* CommonRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B8A1D5C7EAD0007C4A3 /* CommonRootViewController.m */; };
+		A6594B8E1D5DC3C90007C4A3 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B8D1D5DC3C90007C4A3 /* MyViewController.m */; };
+		A6594BA31D61A6040007C4A3 /* JHChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B911D61A6040007C4A3 /* JHChart.m */; };
+		A6594BA41D61A6040007C4A3 /* JHColumnChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B941D61A6040007C4A3 /* JHColumnChart.m */; };
+		A6594BA51D61A6040007C4A3 /* JHLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B961D61A6040007C4A3 /* JHLineChart.m */; };
+		A6594BA61D61A6040007C4A3 /* JHPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B981D61A6040007C4A3 /* JHPieChart.m */; };
+		A6594BA71D61A6040007C4A3 /* JHPieForeBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B9A1D61A6040007C4A3 /* JHPieForeBGView.m */; };
+		A6594BA81D61A6040007C4A3 /* JHPieItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B9C1D61A6040007C4A3 /* JHPieItemsView.m */; };
+		A6594BA91D61A6040007C4A3 /* JHRingChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B9E1D61A6040007C4A3 /* JHRingChart.m */; };
+		A6594BAA1D61A6040007C4A3 /* JHShowInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594BA01D61A6040007C4A3 /* JHShowInfoView.m */; };
+		A6594BAB1D61A6040007C4A3 /* JHWaveChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594BA21D61A6040007C4A3 /* JHWaveChart.m */; };
 		A6C672C91D5C102100EDCC56 /* AddRemandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672C81D5C102100EDCC56 /* AddRemandViewController.m */; };
 		A6C672D71D5C10B900EDCC56 /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672CC1D5C10B900EDCC56 /* LewPopupBackgroundView.m */; };
 		A6C672D81D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672CE1D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m */; };
@@ -87,8 +96,6 @@
 		A62F21611D5186F3003E71C7 /* ContactMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactMainViewController.m; sourceTree = "<group>"; };
 		A62F21631D518703003E71C7 /* LearnMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnMainViewController.h; sourceTree = "<group>"; };
 		A62F21641D518703003E71C7 /* LearnMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnMainViewController.m; sourceTree = "<group>"; };
-		A62F21661D518716003E71C7 /* PersonCenterMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCenterMainViewController.h; sourceTree = "<group>"; };
-		A62F21671D518716003E71C7 /* PersonCenterMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCenterMainViewController.m; sourceTree = "<group>"; };
 		A62F216C1D519522003E71C7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A62F216D1D519522003E71C7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A62F216F1D519727003E71C7 /* KFSPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFSPrefixHeader.pch; sourceTree = "<group>"; };
@@ -123,6 +130,27 @@
 		A6594B861D5C2A360007C4A3 /* GFWeekView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFWeekView.xib; sourceTree = "<group>"; };
 		A6594B891D5C7EAD0007C4A3 /* CommonRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonRootViewController.h; sourceTree = "<group>"; };
 		A6594B8A1D5C7EAD0007C4A3 /* CommonRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonRootViewController.m; sourceTree = "<group>"; };
+		A6594B8C1D5DC3C90007C4A3 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		A6594B8D1D5DC3C90007C4A3 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		A6594B901D61A6040007C4A3 /* JHChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHChart.h; sourceTree = "<group>"; };
+		A6594B911D61A6040007C4A3 /* JHChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHChart.m; sourceTree = "<group>"; };
+		A6594B921D61A6040007C4A3 /* JHChartHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHChartHeader.h; sourceTree = "<group>"; };
+		A6594B931D61A6040007C4A3 /* JHColumnChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHColumnChart.h; sourceTree = "<group>"; };
+		A6594B941D61A6040007C4A3 /* JHColumnChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHColumnChart.m; sourceTree = "<group>"; };
+		A6594B951D61A6040007C4A3 /* JHLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHLineChart.h; sourceTree = "<group>"; };
+		A6594B961D61A6040007C4A3 /* JHLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHLineChart.m; sourceTree = "<group>"; };
+		A6594B971D61A6040007C4A3 /* JHPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPieChart.h; sourceTree = "<group>"; };
+		A6594B981D61A6040007C4A3 /* JHPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPieChart.m; sourceTree = "<group>"; };
+		A6594B991D61A6040007C4A3 /* JHPieForeBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPieForeBGView.h; sourceTree = "<group>"; };
+		A6594B9A1D61A6040007C4A3 /* JHPieForeBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPieForeBGView.m; sourceTree = "<group>"; };
+		A6594B9B1D61A6040007C4A3 /* JHPieItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPieItemsView.h; sourceTree = "<group>"; };
+		A6594B9C1D61A6040007C4A3 /* JHPieItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPieItemsView.m; sourceTree = "<group>"; };
+		A6594B9D1D61A6040007C4A3 /* JHRingChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHRingChart.h; sourceTree = "<group>"; };
+		A6594B9E1D61A6040007C4A3 /* JHRingChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHRingChart.m; sourceTree = "<group>"; };
+		A6594B9F1D61A6040007C4A3 /* JHShowInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHShowInfoView.h; sourceTree = "<group>"; };
+		A6594BA01D61A6040007C4A3 /* JHShowInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHShowInfoView.m; sourceTree = "<group>"; };
+		A6594BA11D61A6040007C4A3 /* JHWaveChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWaveChart.h; sourceTree = "<group>"; };
+		A6594BA21D61A6040007C4A3 /* JHWaveChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHWaveChart.m; sourceTree = "<group>"; };
 		A6C672C71D5C102100EDCC56 /* AddRemandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRemandViewController.h; sourceTree = "<group>"; };
 		A6C672C81D5C102100EDCC56 /* AddRemandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRemandViewController.m; sourceTree = "<group>"; };
 		A6C672CB1D5C10B900EDCC56 /* LewPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupBackgroundView.h; sourceTree = "<group>"; };
@@ -281,8 +309,6 @@
 		A62F216B1D518A80003E71C7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A62F21661D518716003E71C7 /* PersonCenterMainViewController.h */,
-				A62F21671D518716003E71C7 /* PersonCenterMainViewController.m */,
 				A62F216C1D519522003E71C7 /* LoginViewController.h */,
 				A62F216D1D519522003E71C7 /* LoginViewController.m */,
 				A62F21711D519DD4003E71C7 /* RegisterViewController.h */,
@@ -293,6 +319,8 @@
 				A62F21821D54766D003E71C7 /* InviteFriendsViewController.m */,
 				A62F21841D5478F2003E71C7 /* AboutViewController.h */,
 				A62F21851D5478F2003E71C7 /* AboutViewController.m */,
+				A6594B8C1D5DC3C90007C4A3 /* MyViewController.h */,
+				A6594B8D1D5DC3C90007C4A3 /* MyViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -310,6 +338,7 @@
 		A62F217D1D5430DA003E71C7 /* 公共操作类 */ = {
 			isa = PBXGroup;
 			children = (
+				A6594B8F1D61A6040007C4A3 /* JHChart */,
 				A6594B881D5C7E900007C4A3 /* Controller */,
 				A6C672CA1D5C10B900EDCC56 /* popupViewController */,
 			);
@@ -362,6 +391,32 @@
 				A6594B8A1D5C7EAD0007C4A3 /* CommonRootViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		A6594B8F1D61A6040007C4A3 /* JHChart */ = {
+			isa = PBXGroup;
+			children = (
+				A6594B901D61A6040007C4A3 /* JHChart.h */,
+				A6594B911D61A6040007C4A3 /* JHChart.m */,
+				A6594B921D61A6040007C4A3 /* JHChartHeader.h */,
+				A6594B931D61A6040007C4A3 /* JHColumnChart.h */,
+				A6594B941D61A6040007C4A3 /* JHColumnChart.m */,
+				A6594B951D61A6040007C4A3 /* JHLineChart.h */,
+				A6594B961D61A6040007C4A3 /* JHLineChart.m */,
+				A6594B971D61A6040007C4A3 /* JHPieChart.h */,
+				A6594B981D61A6040007C4A3 /* JHPieChart.m */,
+				A6594B991D61A6040007C4A3 /* JHPieForeBGView.h */,
+				A6594B9A1D61A6040007C4A3 /* JHPieForeBGView.m */,
+				A6594B9B1D61A6040007C4A3 /* JHPieItemsView.h */,
+				A6594B9C1D61A6040007C4A3 /* JHPieItemsView.m */,
+				A6594B9D1D61A6040007C4A3 /* JHRingChart.h */,
+				A6594B9E1D61A6040007C4A3 /* JHRingChart.m */,
+				A6594B9F1D61A6040007C4A3 /* JHShowInfoView.h */,
+				A6594BA01D61A6040007C4A3 /* JHShowInfoView.m */,
+				A6594BA11D61A6040007C4A3 /* JHWaveChart.h */,
+				A6594BA21D61A6040007C4A3 /* JHWaveChart.m */,
+			);
+			path = JHChart;
 			sourceTree = "<group>";
 		};
 		A6C672CA1D5C10B900EDCC56 /* popupViewController */ = {
@@ -518,32 +573,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62F21621D5186F3003E71C7 /* ContactMainViewController.m in Sources */,
+				A6594BAA1D61A6040007C4A3 /* JHShowInfoView.m in Sources */,
 				A6C672C91D5C102100EDCC56 /* AddRemandViewController.m in Sources */,
 				A62F21761D519DE1003E71C7 /* ForgetPwdViewController.m in Sources */,
+				A6594B8E1D5DC3C90007C4A3 /* MyViewController.m in Sources */,
 				A6C672D81D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m in Sources */,
 				A62F21971D58671C003E71C7 /* MyStateView.m in Sources */,
 				A6C672DA1D5C10B900EDCC56 /* LewPopupViewAnimationSlide.m in Sources */,
+				A6594BAB1D61A6040007C4A3 /* JHWaveChart.m in Sources */,
 				A62F216E1D519522003E71C7 /* LoginViewController.m in Sources */,
 				A62F218E1D582D8B003E71C7 /* RemainView.m in Sources */,
 				A6C672DB1D5C10B900EDCC56 /* LewPopupViewAnimationSpring.m in Sources */,
 				A62F215F1D5186BB003E71C7 /* FirstPageMainViewController.m in Sources */,
 				A62F21311D518502003E71C7 /* KFS.xcdatamodeld in Sources */,
 				A6C672D71D5C10B900EDCC56 /* LewPopupBackgroundView.m in Sources */,
+				A6594BA51D61A6040007C4A3 /* JHLineChart.m in Sources */,
 				A6C672DC1D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m in Sources */,
 				A6594B8B1D5C7EAD0007C4A3 /* CommonRootViewController.m in Sources */,
+				A6594BA81D61A6040007C4A3 /* JHPieItemsView.m in Sources */,
+				A6594BA71D61A6040007C4A3 /* JHPieForeBGView.m in Sources */,
 				A6C672DF1D5C113800EDCC56 /* GFDateView.m in Sources */,
+				A6594BA61D61A6040007C4A3 /* JHPieChart.m in Sources */,
 				A6594B851D5C2A1E0007C4A3 /* GFWeekView.m in Sources */,
 				A62F21731D519DD4003E71C7 /* RegisterViewController.m in Sources */,
 				A62F21281D518502003E71C7 /* AppDelegate.m in Sources */,
 				A62F21E31D5B10BA003E71C7 /* RemandSetTableViewCell.m in Sources */,
 				A6C672D91D5C10B900EDCC56 /* LewPopupViewAnimationFade.m in Sources */,
+				A6594BA91D61A6040007C4A3 /* JHRingChart.m in Sources */,
 				A62F218B1D582C18003E71C7 /* MoodView.m in Sources */,
 				A62F21941D585916003E71C7 /* MoodUnitView.m in Sources */,
 				A62F21251D518502003E71C7 /* main.m in Sources */,
-				A62F21681D518716003E71C7 /* PersonCenterMainViewController.m in Sources */,
+				A6594BA31D61A6040007C4A3 /* JHChart.m in Sources */,
 				A62F21831D54766D003E71C7 /* InviteFriendsViewController.m in Sources */,
 				A62F217B1D51E24D003E71C7 /* TableViewCell.m in Sources */,
 				A62F21911D585867003E71C7 /* RemandUnitView.m in Sources */,
+				A6594BA41D61A6040007C4A3 /* JHColumnChart.m in Sources */,
 				A62F21861D5478F2003E71C7 /* AboutViewController.m in Sources */,
 				A62F21651D518703003E71C7 /* LearnMainViewController.m in Sources */,
 				A62F219A1D586E4C003E71C7 /* SetHelperViewController.m in Sources */,

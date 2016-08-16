@@ -20,5 +20,7 @@
 #define DE_BgColorPink [UIColor colorWithRed:229.0/255.0 green:75.0/255.0 blue:140.0/255.0 alpha:1]
 #define DE_BgColorGray [UIColor colorWithRed:228.0/255.0 green:228.0/255.0 blue:228.0/255.0 alpha:1]
 #define DE_SegColorGray [UIColor colorWithRed:97.0/255.0 green:97.0/255.0 blue:97.0/255.0 alpha:0.5]
+#define DE_LineColorPup [UIColor colorWithRed:219.0/255.0 green:129.0/255.0 blue:233.0/255.0 alpha:1]
+#define DE_LineColorOrg [UIColor colorWithRed:230.0/255.0 green:166.0/255.0 blue:98.0/255.0 alpha:1]
 
 

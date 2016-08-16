@@ -10,7 +10,7 @@
 #import "FirstPageMainViewController.h"
 #import "ContactMainViewController.h"
 #import "LearnMainViewController.h"
-#include "PersonCenterMainViewController.h"
+#include "MyViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,10 +27,10 @@
     //给姐妹赋值
     _storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *path=NSHomeDirectory();
-    NSLog(documentsDirectory);
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+//    NSString *documentsDirectory = [paths objectAtIndex:0];
+//    NSString *path=NSHomeDirectory();
+//    NSLog(documentsDirectory);
     //获取是否已经登录
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
     BOOL isLogin=[[defaults objectForKey:DE_IsLogin]boolValue];
@@ -163,7 +163,7 @@
         
         LearnMainViewController *vc3=[_storyboard instantiateViewControllerWithIdentifier:@"LearnMainViewController"];
         
-        PersonCenterMainViewController *vc4=[_storyboard instantiateViewControllerWithIdentifier:@"PersonCenterMainViewController"];
+        MyViewController *vc4=[_storyboard instantiateViewControllerWithIdentifier:@"MyViewController"];
         
         UINavigationController *nav1=[[UINavigationController alloc]initWithRootViewController:vc1];
         nav1.title=@"动态";
