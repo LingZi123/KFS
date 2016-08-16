@@ -30,13 +30,13 @@
     locationLabel.textColor=DE_BgColorPink;
     [self addSubview:locationLabel];
     
-    xinqingview=[[MoodUnitView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width-80, 26) count:5 subimagename:@""];
+    xinqingview=[[MoodUnitView alloc]initWithFrame:CGRectMake(0, 0, 220, 26) count:5 subimagename:@""];
     xinqingview.titleLabel.text=@"心情：";
     xinqingview.center=CGPointMake(self.center.x, CGRectGetMaxY(locationLabel.frame)+32);
     [xinqingview.headImageView setImage:[UIImage imageNamed:@"心情2"]];
     [self addSubview:xinqingview];
     
-    jiankangview=[[MoodUnitView alloc]initWithFrame:CGRectMake(0, 0,self.frame.size.width-80, 26) count:5 subimagename:@""];
+    jiankangview=[[MoodUnitView alloc]initWithFrame:CGRectMake(0, 0,220, 26) count:5 subimagename:@""];
     [jiankangview.headImageView setImage:[UIImage imageNamed:@"健康2"]];
     jiankangview.titleLabel.text=@"健康：";
     jiankangview.center=CGPointMake(self.center.x, CGRectGetMaxY(xinqingview.frame)+24);
