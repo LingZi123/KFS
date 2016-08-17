@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "CommonRootViewController.h"
+#import "LableTextFieldView.h"
 
 @interface LoginViewController : CommonRootViewController<UITextFieldDelegate>{
     
-    __weak IBOutlet UITextField *usenameTextField;
-    __weak IBOutlet UITextField *pwdTextField;
+    UIImageView *headImageView;
+    LableTextFieldView *accountView;
+    LableTextFieldView *pwdView;
 }
-- (IBAction)loginBtnClick:(id)sender;
 
 @end

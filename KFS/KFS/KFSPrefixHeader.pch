@@ -17,6 +17,7 @@
 #define DE_IsLogin @"IsLogin" //是否登录
 #define DE_PhotoImage @"PhotoImage" //头像
 #define DE_Font11 [UIFont systemFontOfSize:11]  //11号字
+#define DE_Font14 [UIFont systemFontOfSize:14]  //11号字
 #define DE_BgColorPink [UIColor colorWithRed:229.0/255.0 green:75.0/255.0 blue:140.0/255.0 alpha:1]
 #define DE_BgColorGray [UIColor colorWithRed:228.0/255.0 green:228.0/255.0 blue:228.0/255.0 alpha:1]
 #define DE_SegColorGray [UIColor colorWithRed:97.0/255.0 green:97.0/255.0 blue:97.0/255.0 alpha:0.5]
@@ -24,3 +25,9 @@
 #define DE_LineColorOrg [UIColor colorWithRed:230.0/255.0 green:166.0/255.0 blue:98.0/255.0 alpha:1]
 
 
+#define DE_Ratio5 320/568
+#define DE_Ratio6 375/667
+#define DE_Ratio6p 414/736
+
+#define DE_LoginTopviewRatio 240.0/320.0
+#define DE_Ration20  20.0/320.0

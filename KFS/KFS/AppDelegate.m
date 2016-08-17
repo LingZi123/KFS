@@ -11,6 +11,7 @@
 #import "ContactMainViewController.h"
 #import "LearnMainViewController.h"
 #include "MyViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    self.window.backgroundColor=DE_BgColorPink;
 //     [UIApplication sharedApplication].statusBarStyle=UIStatusBarStyleLightContent;
     
     //给姐妹赋值
@@ -202,7 +204,8 @@
 }
 -(void)makeLoginView{
     if (_loginNav==nil||_loginNav==(id)[NSNull null]) {
-        _loginNav=[_storyboard instantiateViewControllerWithIdentifier:@"LoginNav"];
+        LoginViewController *vc=[[LoginViewController alloc]init];
+        _loginNav=[[UINavigationController alloc]initWithRootViewController:vc];
     }
     if (_loginNav.viewControllers.count>1) {
         [_loginNav popToRootViewControllerAnimated:YES];

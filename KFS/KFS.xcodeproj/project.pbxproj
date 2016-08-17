@@ -59,6 +59,7 @@
 		A6DCCE801D62C0D4006A0CAF /* LearnMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6DCCE7E1D62C0D4006A0CAF /* LearnMainCell.xib */; };
 		A6DCCE841D62C127006A0CAF /* LearnSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE821D62C127006A0CAF /* LearnSubCell.m */; };
 		A6DCCE851D62C127006A0CAF /* LearnSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6DCCE831D62C127006A0CAF /* LearnSubCell.xib */; };
+		A6DCCE881D643A24006A0CAF /* LableTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE871D643A24006A0CAF /* LableTextFieldView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,8 @@
 		A6DCCE811D62C127006A0CAF /* LearnSubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnSubCell.h; sourceTree = "<group>"; };
 		A6DCCE821D62C127006A0CAF /* LearnSubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnSubCell.m; sourceTree = "<group>"; };
 		A6DCCE831D62C127006A0CAF /* LearnSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnSubCell.xib; sourceTree = "<group>"; };
+		A6DCCE861D643A24006A0CAF /* LableTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LableTextFieldView.h; sourceTree = "<group>"; };
+		A6DCCE871D643A24006A0CAF /* LableTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LableTextFieldView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +344,8 @@
 				A62F21781D51E24D003E71C7 /* TableViewCell.h */,
 				A62F21791D51E24D003E71C7 /* TableViewCell.m */,
 				A62F217A1D51E24D003E71C7 /* TableViewCell.xib */,
+				A6DCCE861D643A24006A0CAF /* LableTextFieldView.h */,
+				A6DCCE871D643A24006A0CAF /* LableTextFieldView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -617,6 +622,7 @@
 				A6C672DA1D5C10B900EDCC56 /* LewPopupViewAnimationSlide.m in Sources */,
 				A6594BAB1D61A6040007C4A3 /* JHWaveChart.m in Sources */,
 				A62F216E1D519522003E71C7 /* LoginViewController.m in Sources */,
+				A6DCCE881D643A24006A0CAF /* LableTextFieldView.m in Sources */,
 				A62F218E1D582D8B003E71C7 /* RemainView.m in Sources */,
 				A6C672DB1D5C10B900EDCC56 /* LewPopupViewAnimationSpring.m in Sources */,
 				A62F215F1D5186BB003E71C7 /* FirstPageMainViewController.m in Sources */,
