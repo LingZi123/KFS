@@ -29,6 +29,7 @@
     NSData *imagedata=[defaults objectForKey:DE_PhotoImage];
     UIImage *image=[UIImage imageWithData:imagedata];
     [imageBtn setBackgroundImage:image forState:UIControlStateNormal];
+    self.tableView.rowHeight=54;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -122,6 +123,12 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row==0) {
+       return  DE_MyTopviewRatio*CGRectGetWidth(self.view.frame);
+    }
+    return self.tableView.rowHeight;
+}
 #pragma mark-UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo NS_DEPRECATED_IOS(2_0, 3_0){
     imageBtn.imageView.image=image;

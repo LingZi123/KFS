@@ -31,4 +31,5 @@
 
 #define DE_LoginTopviewRatio 240.0/320.0
 #define DE_LearnTopviewRatio 182.0/320.0
+#define DE_MyTopviewRatio 180.0/320.0
 #define DE_Ration20  20.0/320.0
