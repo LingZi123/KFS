@@ -24,6 +24,12 @@
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor=DE_BgColorPink;
+    
+    
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+        UIUserNotificationSettings *noteSetting=[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil];
+        [[UIApplication sharedApplication]registerUserNotificationSettings:noteSetting];
+    }
 //     [UIApplication sharedApplication].statusBarStyle=UIStatusBarStyleLightContent;
     
     //给姐妹赋值
@@ -33,6 +39,16 @@
 //    NSString *documentsDirectory = [paths objectAtIndex:0];
 //    NSString *path=NSHomeDirectory();
 //    NSLog(documentsDirectory);
+    
+    NSArray *localNotifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
+
+     NSLog(@"%@", localNotifications);
+    for (UILocalNotification *itme in localNotifications) {
+        [[UIApplication sharedApplication]cancelLocalNotification:itme];
+
+    }
+    
+    
     //获取是否已经登录
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
     BOOL isLogin=[[defaults objectForKey:DE_IsLogin]boolValue];
@@ -65,6 +81,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    application.applicationIconBadgeNumber=0;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -73,6 +90,9 @@
     [self saveContext];
 }
 
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    application.applicationIconBadgeNumber=0;
+}
 #pragma mark - Core Data stack
 
 @synthesize managedObjectContext = _managedObjectContext;

@@ -8,17 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddRemandViewController : UITableViewController
+@interface AddRemandViewController : UITableViewController<UITextFieldDelegate>
 {
     
     __weak IBOutlet UIButton *dateBtn;
     __weak IBOutlet UIButton *timeBtn;
     __weak IBOutlet UIButton *repeatBtn;
     __weak IBOutlet UITextField *nameTextField;
+    NSDate *beginDate;//开始日期
+    NSDate *beginTime;//开始时间
+    NSMutableArray *repeatArray;//重复时间
+    NSString *repeatStr;
+    NSString *beginTimeStr;
+    NSString *imagename;//图片
+    
+    NSMutableDictionary *datamdic;
 }
 - (IBAction)dateBtnClick:(id)sender;
 
 - (IBAction)timeBtnClick:(id)sender;
 - (IBAction)repeatBtnClick:(id)sender;
 - (IBAction)changeBtnClick:(id)sender;
+- (IBAction)saveBtnClick:(id)sender;
+- (IBAction)deleteBtnClick:(id)sender;
 @end

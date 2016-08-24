@@ -35,7 +35,7 @@
     [bgview addSubview:firstView];
     
     //我的提醒
-    remandView=[[RemainView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(firstView.frame)+1, CGRectGetWidth(bgview.frame), 165)];
+    remandView=[[RemainView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(firstView.frame)+1, CGRectGetWidth(bgview.frame), 168)];
     remandView.delegate=self;
     [bgview addSubview:remandView];
     //我的状态
@@ -43,7 +43,7 @@
     mystateView=[[MyStateView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(remandView.frame)+1, CGRectGetWidth(bgview.frame), 200)];
     [bgview addSubview:mystateView];
     
-    UIImageView *endImage=[[UIImageView alloc]initWithFrame:CGRectMake(2, CGRectGetMaxY(mystateView.frame)+5, CGRectGetWidth(bgview.frame)-4, 65)];
+    UIImageView *endImage=[[UIImageView alloc]initWithFrame:CGRectMake(2, CGRectGetMaxY(mystateView.frame)+5, CGRectGetWidth(bgview.frame)-4, DE_Ration65*CGRectGetWidth(self.view.frame))];
     [endImage setImage:[UIImage imageNamed:@"任务"]];
     [bgview addSubview:endImage];
     

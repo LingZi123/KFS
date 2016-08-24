@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import "AppDelegate.h"
 #import "LableTextFieldView.h"
-#import "RegisterViewController.h"
+#import "RegistTableViewController.h"
 
 @interface LoginViewController ()
 
@@ -118,7 +118,7 @@
 
 -(void)regitBtnClick:(UIButton *)sender{
     
-    RegisterViewController *vc=[[self appdelegate].storyboard instantiateViewControllerWithIdentifier:@"RegisterViewController"];
+    RegistTableViewController *vc=[[self appdelegate].storyboard instantiateViewControllerWithIdentifier:@"RegistTableViewController"];
     
     [self.navigationController pushViewController:vc animated:YES];
 }

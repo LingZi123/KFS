@@ -46,6 +46,12 @@
 		A6594BA91D61A6040007C4A3 /* JHRingChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594B9E1D61A6040007C4A3 /* JHRingChart.m */; };
 		A6594BAA1D61A6040007C4A3 /* JHShowInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594BA01D61A6040007C4A3 /* JHShowInfoView.m */; };
 		A6594BAB1D61A6040007C4A3 /* JHWaveChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A6594BA21D61A6040007C4A3 /* JHWaveChart.m */; };
+		A67B856A1D6D421500B08D9F /* 短信08.caf in Resources */ = {isa = PBXBuildFile; fileRef = A67B85691D6D421500B08D9F /* 短信08.caf */; };
+		A67B856B1D6D421500B08D9F /* 短信08.caf in Resources */ = {isa = PBXBuildFile; fileRef = A67B85691D6D421500B08D9F /* 短信08.caf */; };
+		A67B856C1D6D421500B08D9F /* 短信08.caf in Resources */ = {isa = PBXBuildFile; fileRef = A67B85691D6D421500B08D9F /* 短信08.caf */; };
+		A67B85721D6D493500B08D9F /* 故事03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A67B85711D6D493500B08D9F /* 故事03.m4a */; };
+		A67B85731D6D493500B08D9F /* 故事03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A67B85711D6D493500B08D9F /* 故事03.m4a */; };
+		A67B85741D6D493500B08D9F /* 故事03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A67B85711D6D493500B08D9F /* 故事03.m4a */; };
 		A6C672C91D5C102100EDCC56 /* AddRemandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672C81D5C102100EDCC56 /* AddRemandViewController.m */; };
 		A6C672D71D5C10B900EDCC56 /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672CC1D5C10B900EDCC56 /* LewPopupBackgroundView.m */; };
 		A6C672D81D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672CE1D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m */; };
@@ -60,6 +66,7 @@
 		A6DCCE841D62C127006A0CAF /* LearnSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE821D62C127006A0CAF /* LearnSubCell.m */; };
 		A6DCCE851D62C127006A0CAF /* LearnSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6DCCE831D62C127006A0CAF /* LearnSubCell.xib */; };
 		A6DCCE881D643A24006A0CAF /* LableTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE871D643A24006A0CAF /* LableTextFieldView.m */; };
+		A6DCCE8B1D6550C5006A0CAF /* RegistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE8A1D6550C5006A0CAF /* RegistTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +163,8 @@
 		A6594BA01D61A6040007C4A3 /* JHShowInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHShowInfoView.m; sourceTree = "<group>"; };
 		A6594BA11D61A6040007C4A3 /* JHWaveChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHWaveChart.h; sourceTree = "<group>"; };
 		A6594BA21D61A6040007C4A3 /* JHWaveChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHWaveChart.m; sourceTree = "<group>"; };
+		A67B85691D6D421500B08D9F /* 短信08.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "短信08.caf"; sourceTree = "<group>"; };
+		A67B85711D6D493500B08D9F /* 故事03.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "故事03.m4a"; sourceTree = "<group>"; };
 		A6C672C71D5C102100EDCC56 /* AddRemandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRemandViewController.h; sourceTree = "<group>"; };
 		A6C672C81D5C102100EDCC56 /* AddRemandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRemandViewController.m; sourceTree = "<group>"; };
 		A6C672CB1D5C10B900EDCC56 /* LewPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupBackgroundView.h; sourceTree = "<group>"; };
@@ -181,6 +190,8 @@
 		A6DCCE831D62C127006A0CAF /* LearnSubCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnSubCell.xib; sourceTree = "<group>"; };
 		A6DCCE861D643A24006A0CAF /* LableTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LableTextFieldView.h; sourceTree = "<group>"; };
 		A6DCCE871D643A24006A0CAF /* LableTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LableTextFieldView.m; sourceTree = "<group>"; };
+		A6DCCE891D6550C5006A0CAF /* RegistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistTableViewController.h; sourceTree = "<group>"; };
+		A6DCCE8A1D6550C5006A0CAF /* RegistTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +312,8 @@
 		A62F215C1D518657003E71C7 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				A67B85711D6D493500B08D9F /* 故事03.m4a */,
+				A67B85691D6D421500B08D9F /* 短信08.caf */,
 				A62F21881D582BBD003E71C7 /* View */,
 				A62F21871D5480C0003E71C7 /*  Controller */,
 			);
@@ -334,6 +347,8 @@
 				A62F21851D5478F2003E71C7 /* AboutViewController.m */,
 				A6594B8C1D5DC3C90007C4A3 /* MyViewController.h */,
 				A6594B8D1D5DC3C90007C4A3 /* MyViewController.m */,
+				A6DCCE891D6550C5006A0CAF /* RegistTableViewController.h */,
+				A6DCCE8A1D6550C5006A0CAF /* RegistTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -580,9 +595,11 @@
 			files = (
 				A62F21361D518502003E71C7 /* LaunchScreen.storyboard in Resources */,
 				A6DCCE801D62C0D4006A0CAF /* LearnMainCell.xib in Resources */,
+				A67B856A1D6D421500B08D9F /* 短信08.caf in Resources */,
 				A6C672E11D5C114B00EDCC56 /* GFDateView.xib in Resources */,
 				A62F217C1D51E24D003E71C7 /* TableViewCell.xib in Resources */,
 				A62F21331D518502003E71C7 /* Assets.xcassets in Resources */,
+				A67B85721D6D493500B08D9F /* 故事03.m4a in Resources */,
 				A62F21E41D5B10BA003E71C7 /* RemandSetTableViewCell.xib in Resources */,
 				A6DCCE851D62C127006A0CAF /* LearnSubCell.xib in Resources */,
 				A62F212E1D518502003E71C7 /* Main.storyboard in Resources */,
@@ -594,6 +611,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67B856B1D6D421500B08D9F /* 短信08.caf in Resources */,
+				A67B85731D6D493500B08D9F /* 故事03.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +620,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67B856C1D6D421500B08D9F /* 短信08.caf in Resources */,
+				A67B85741D6D493500B08D9F /* 故事03.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +647,7 @@
 				A62F218E1D582D8B003E71C7 /* RemainView.m in Sources */,
 				A6C672DB1D5C10B900EDCC56 /* LewPopupViewAnimationSpring.m in Sources */,
 				A62F215F1D5186BB003E71C7 /* FirstPageMainViewController.m in Sources */,
+				A6DCCE8B1D6550C5006A0CAF /* RegistTableViewController.m in Sources */,
 				A62F21311D518502003E71C7 /* KFS.xcdatamodeld in Sources */,
 				A6C672D71D5C10B900EDCC56 /* LewPopupBackgroundView.m in Sources */,
 				A6594BA51D61A6040007C4A3 /* JHLineChart.m in Sources */,

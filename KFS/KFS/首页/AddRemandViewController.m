@@ -42,60 +42,9 @@
     return 6;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [nameTextField resignFirstResponder];
 }
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 #pragma mark-动作
 - (IBAction)dateBtnClick:(id)sender {
     [nameTextField resignFirstResponder];
@@ -134,16 +83,82 @@
 - (IBAction)changeBtnClick:(id)sender {
 }
 
+- (IBAction)saveBtnClick:(id)sender {
+    
+    NSDate *today=[NSDate new];
+    
+//    if ([beginDate compare:today]) {
+//        return;
+//    }
+//    
+//    if (datamdic==nil) {
+//        datamdic=[[NSMutableDictionary alloc]init];
+//    }
+    imagename=@"";
+    [datamdic setObject:nameTextField.text forKey:@"name"];
+    [datamdic setObject:imagename forKey:@"imageName"];
+    [datamdic setObject:beginDate forKey:@"beginDate"];
+    [datamdic setObject:dateBtn.titleLabel.text forKey:@"beginDateStr"];
+    [datamdic setObject:beginTime forKey:@"beginTime"];
+    [datamdic setObject:timeBtn.titleLabel.text forKey:@"beginTimeStr"];
+    [datamdic setObject:repeatArray forKey:@"repeat"];
+    [datamdic setObject:[NSNumber numberWithBool:YES] forKey:@"isOpen"];
+    [datamdic setObject:@"医生" forKey:@"from"];
+    
+    
+    // 添加通知
+    UILocalNotification *notification=[[UILocalNotification alloc]init];
+    notification.timeZone=[NSTimeZone defaultTimeZone];
+    notification.fireDate=[NSDate dateWithTimeIntervalSinceNow:60];//10秒后通知
+    notification.repeatInterval=kCFCalendarUnitDay;//循环次数，kCFCalendarUnitWeekday一周一次
+   
+    notification.applicationIconBadgeNumber++; //应用的红色数字
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"短信08" ofType:@"caf"];
+    NSLog(@"path-------------%@",path);
+    notification.soundName=@"故事03.m4a";
+    //[NSString stringWithFormat:@"/System/Library/Audio/UISounds/%@.%@",@"sms-received2",@".caf"];
+                            //@"夏薇青 - 致爱丽丝.mp3";//UILocalNotificationDefaultSoundName;//声音，可以换成alarm.soundName = @"myMusic.caf"
+    
+    //去掉下面2行就不会弹出提示框
+    notification.alertTitle=@"任务通知";
+    notification.alertBody=nameTextField.text;//提示信息 弹出提示框
+    notification.alertAction = @"打开";  //提示框按钮
+    notification.hasAction = YES; //是否显示额外的按钮，为no时alertAction消失
+    NSDictionary*infoDict = [NSDictionary dictionaryWithObject:@"someValue" forKey:@"someKey"];
+    notification.userInfo = infoDict; //添加额外的信息
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
+- (IBAction)deleteBtnClick:(id)sender {
+}
+
 #pragma mark-GFDateViewDelegate
 -(void)didDateSelectedFinished:(NSDate *)date dateStr:(NSString *)dateStr{
     [dateBtn setTitle:dateStr forState:UIControlStateNormal];
+    beginDate=date;
 }
 -(void)didTimeSelectedFinished:(NSDate *)date dateStr:(NSString *)dateStr{
     [timeBtn setTitle:dateStr forState:UIControlStateNormal];
+    beginTime=date;
     
 }
 #pragma mrak-GFWeekViewDelegate
 -(void)didWeekSelectedFinished:(NSMutableArray *)array weekStr:(NSString *)weekStr{
     [repeatBtn setTitle:weekStr forState:UIControlStateNormal];
+    if (repeatArray==nil) {
+        repeatArray=[[NSMutableArray alloc]init];
+    }
+    [repeatArray removeAllObjects];
+    [repeatArray addObjectsFromArray:array];
+}
+
+#pragma mark-UITextFieldDelegate
+-(BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    [nameTextField resignFirstResponder];
+    return YES;
 }
 @end
