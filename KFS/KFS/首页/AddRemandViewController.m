@@ -110,7 +110,7 @@
     UILocalNotification *notification=[[UILocalNotification alloc]init];
     notification.timeZone=[NSTimeZone defaultTimeZone];
     notification.fireDate=[NSDate dateWithTimeIntervalSinceNow:60];//10秒后通知
-    notification.repeatInterval=kCFCalendarUnitDay;//循环次数，kCFCalendarUnitWeekday一周一次
+    notification.repeatInterval=kCFCalendarUnitHour;//循环次数，kCFCalendarUnitWeekday一周一次
    
     notification.applicationIconBadgeNumber++; //应用的红色数字
     NSString *path = [[NSBundle mainBundle]pathForResource:@"短信08" ofType:@"caf"];
