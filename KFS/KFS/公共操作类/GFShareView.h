@@ -9,6 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "WXApiObject.h"
 #import "WXApi.h"
-@interface GFShareView : UIView<WXApiDelegate>
 
+@protocol GFShareViewDelegate <NSObject>
+
+-(void)cancelShareView;
+
+@end
+@interface GFShareView : UIView<WXApiDelegate>{
+    NSArray *titleArray;
+}
+
+@property(nonatomic,assign)id<GFShareViewDelegate>delegate;
 @end

@@ -17,19 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    shareView=[[GFShareView alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame)-300, CGRectGetWidth(self.view.frame), 300)];
-     self.isShowShareView=YES;
-    shareView.hidden= self.isShowShareView;
+    shareView=[[GFShareView alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame), CGRectGetWidth(self.view.frame), 300)];
+    shareView.delegate=self;
+     self.isHidenShareView=YES;
+    shareView.hidden= self.isHidenShareView;
+    
     [self.view addSubview:shareView];
     origiColor=self.view.backgroundColor;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    [self addObserver:self forKeyPath:@"isShowShareView" options:NSKeyValueObservingOptionNew  context:nil];
+    [self addObserver:self forKeyPath:@"isHidenShareView" options:NSKeyValueObservingOptionNew  context:nil];
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
-    [self removeObserver:self forKeyPath:@"isShowShareView"];
+    [self removeObserver:self forKeyPath:@"isHidenShareView"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -37,48 +39,64 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    if (self.isHidenShareView) {
+        return;
+    }
     NSSet *allTouches = [event allTouches];    //返回与当前接收者有关的所有的触摸对象
     UITouch *touch = [allTouches anyObject];   //视图中的所有对象
-    CGPoint point = [touch locationInView:[touch view]]; //返回触摸点在视图中的当前坐标
-    int x = point.x;
-    int y = point.y;
-    if (y<CGRectGetHeight(self.view.frame)-CGRectGetHeight(shareView.frame)) {
-         self.isShowShareView=YES;
+    UIView *currentView=[touch view];
+    if (![currentView isEqual:shareView]) {
+        self.isHidenShareView=YES;
+
     }
 }
 
 - (IBAction)shareBtnClick:(id)sender {
     
-    self.isShowShareView=NO;
+    self.isHidenShareView=NO;
     
 }
 
 #pragma mark-观察者
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     
-    if ([keyPath isEqualToString:@"isShowShareView"]) {
+    if ([keyPath isEqualToString:@"isHidenShareView"]) {
        
-        if (self.isShowShareView) {
-            self.view.backgroundColor=origiColor;
-            topView.alpha=1;
-        }
-        else{
+        if (!self.isHidenShareView) {
             self.view.backgroundColor=[UIColor blackColor];
             topView.alpha=0.8;
         }
-        if (!self.isShowShareView) {
-            [UIView animateWithDuration:3.0 delay:0.5 usingSpringWithDamping:1.0 initialSpringVelocity:10.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                 shareView.hidden= self.isShowShareView;
+
+        if (!self.isHidenShareView) {
+            [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                shareView.hidden= self.isHidenShareView;
+                
+                //位置要加64的导航栏。否则会上移
+                shareView.frame=CGRectMake(0, CGRectGetHeight(self.view.frame)-300+64, CGRectGetWidth(self.view.frame), 300);
             } completion:^(BOOL finished) {
                 
             }];
         }
         else{
            
-            shareView.hidden= self.isShowShareView;
+            [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+                shareView.frame=CGRectMake(0, CGRectGetHeight(self.view.frame), CGRectGetWidth(self.view.frame), 300);
+            } completion:^(BOOL finished) {
+                 shareView.hidden= self.isHidenShareView;
+                self.view.backgroundColor=origiColor;
+                topView.alpha=1;
+                
+            }];
+           
+            
         }
         
     }
     
+}
+
+#pragma mark-GFShareViewDelegate
+-(void)cancelShareView{
+    self.isHidenShareView=YES;
 }
 @end

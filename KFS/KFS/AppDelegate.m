@@ -98,6 +98,8 @@
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
     application.applicationIconBadgeNumber=0;
 }
+
+
 #pragma mark - Core Data stack
 
 @synthesize managedObjectContext = _managedObjectContext;

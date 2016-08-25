@@ -25,24 +25,35 @@
 
 
 -(void)makeView{
+    
+    titleArray=[[NSArray alloc]initWithObjects:@"微信好友",@"微信朋友圈",@"QQ好友",@"QQ空间", nil];
     self.backgroundColor=DE_BgColorGray;
-
+    self.alpha=0.9;
     //排版 微信好友、微信朋友圈、qq好友、qq空间  大小55px
-    CGFloat widthFlex=(CGRectGetWidth(self.frame)-55*4)/4;
+    CGFloat widthFlex=(CGRectGetWidth(self.frame)-55*4)/5;
+    CGFloat height=CGRectGetHeight(self.frame);
     for (int i=0; i<4; i++) {
         UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(widthFlex+i*(55+widthFlex), 40, 55, 55)];
         [btn setTitle:[NSString stringWithFormat:@"分享到%d ",i] forState:UIControlStateNormal];
         btn.titleLabel.font=DE_Font11;
-        [btn setBackgroundColor:DE_BgColorGray];
+        [btn setBackgroundColor:[UIColor greenColor]];
         btn.tag=100+i;
         [btn addTarget:self action:@selector(shareBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
+        
+        UILabel *lbl=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 70, 21)];
+        lbl.center=CGPointMake(btn.center.x, CGRectGetMaxY(btn.frame)+20);
+        lbl.text=[titleArray objectAtIndex:i];
+        lbl.textAlignment=NSTextAlignmentCenter;
+        lbl.font=DE_Font11;
+        [self addSubview:lbl];
+
     }
     
-    UIButton *cancelBtn=[[UIButton alloc]initWithFrame:CGRectMake(0,CGRectGetHeight(self.frame)-40,CGRectGetWidth(self.frame),40)];
+    UIButton *cancelBtn=[[UIButton alloc]initWithFrame:CGRectMake(0,height-40-64,CGRectGetWidth(self.frame),40)];
     [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
-    [cancelBtn setBackgroundColor:[UIColor whiteColor]];
-    [cancelBtn addTarget:self action:@selector(shareBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [cancelBtn setBackgroundColor:[UIColor redColor]];
+    [cancelBtn addTarget:self action:@selector(cancelBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:cancelBtn];
 
 }
@@ -82,7 +93,7 @@
 }
 
 -(void)cancelBtnClick:(UIButton *)sender{
-    
+    [self.delegate cancelShareView];
 }
 
 //#pragma mark-WXApiManagerDelegate
