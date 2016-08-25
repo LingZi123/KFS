@@ -12,6 +12,8 @@
 #import "LearnMainViewController.h"
 #include "MyViewController.h"
 #import "LoginViewController.h"
+#import "WXApi.h"
+
 
 @interface AppDelegate ()
 
@@ -25,6 +27,9 @@
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor=DE_BgColorPink;
     
+    
+    //向微信注册
+    [WXApi registerApp:DE_WeChatAppId];
     
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
         UIUserNotificationSettings *noteSetting=[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil];

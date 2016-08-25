@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GFShareView.h"
 
-@interface InviteFriendsViewController : UIViewController
+@interface InviteFriendsViewController : UIViewController{
+    GFShareView *shareView;
+    UIColor *origiColor;//原始背景色
+    __weak IBOutlet UIView *topView;
+}
+
+@property(nonatomic,assign)BOOL isShowShareView;//是否显示分享页面
 - (IBAction)shareBtnClick:(id)sender;
 @end

@@ -34,3 +34,5 @@
 #define DE_MyTopviewRatio 180.0/320.0
 #define DE_Ration20  20.0/320.0
 #define DE_Ration65  65.0/320.0
+
+#define DE_WeChatAppId @"wxb9ac005700c7efce"

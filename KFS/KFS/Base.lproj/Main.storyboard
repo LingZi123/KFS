@@ -34,15 +34,16 @@
                         <viewControllerLayoutGuide type="bottom" id="Ia4-9B-4Yu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="T0B-Wx-drr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="我的动态" id="Iv3-TT-Eyr"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7h-ml-pu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="494" y="400"/>
+            <point key="canvasLocation" x="494" y="296"/>
         </scene>
         <!--Set Helper View Controller-->
         <scene sceneID="42k-K0-GHC">
@@ -832,49 +833,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app二维码" translatesAutoresizingMaskIntoConstraints="NO" id="hPw-Sm-9uT">
-                                <rect key="frame" x="85" y="84" width="150" height="150"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQd-lW-stj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="app二维码" translatesAutoresizingMaskIntoConstraints="NO" id="hPw-Sm-9uT">
+                                        <rect key="frame" x="85" y="84" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="QdN-CN-O8E"/>
+                                            <constraint firstAttribute="height" constant="150" id="TLX-OT-0Wm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="扫描二维码下载应用" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAM-Gr-ucA">
+                                        <rect key="frame" x="20" y="244" width="280" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="KED-IQ-KmU"/>
+                                            <constraint firstAttribute="height" constant="21" id="oQT-4x-EtU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwS-Zp-BYy">
+                                        <rect key="frame" x="20" y="304" width="280" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="jrF-ki-jJq"/>
+                                            <constraint firstAttribute="height" constant="35" id="rEi-Go-8lq"/>
+                                        </constraints>
+                                        <state key="normal" title="分享给好友">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shareBtnClick:" destination="07z-1s-8Sc" eventType="touchUpInside" id="KmT-x9-Zp7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="QdN-CN-O8E"/>
-                                    <constraint firstAttribute="height" constant="150" id="TLX-OT-0Wm"/>
+                                    <constraint firstItem="dAM-Gr-ucA" firstAttribute="centerX" secondItem="hQd-lW-stj" secondAttribute="centerX" id="04q-t3-oQM"/>
+                                    <constraint firstItem="hPw-Sm-9uT" firstAttribute="top" secondItem="hQd-lW-stj" secondAttribute="top" constant="100" id="3Ee-ML-ktg"/>
+                                    <constraint firstItem="hPw-Sm-9uT" firstAttribute="top" secondItem="hQd-lW-stj" secondAttribute="top" constant="84" id="79V-tr-yf8"/>
+                                    <constraint firstItem="SwS-Zp-BYy" firstAttribute="centerX" secondItem="hQd-lW-stj" secondAttribute="centerX" id="B9Q-ht-yBu"/>
+                                    <constraint firstItem="hPw-Sm-9uT" firstAttribute="centerX" secondItem="hQd-lW-stj" secondAttribute="centerX" id="bfA-Fi-tAD"/>
+                                    <constraint firstItem="hPw-Sm-9uT" firstAttribute="top" secondItem="dAM-Gr-ucA" secondAttribute="bottom" constant="25" id="gTd-6h-jmg"/>
+                                    <constraint firstItem="dAM-Gr-ucA" firstAttribute="top" secondItem="hPw-Sm-9uT" secondAttribute="bottom" constant="10" id="rUY-Ag-bIE"/>
+                                    <constraint firstItem="SwS-Zp-BYy" firstAttribute="top" secondItem="dAM-Gr-ucA" secondAttribute="bottom" constant="39" id="xLp-0C-NRh"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="扫描二维码下载应用" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAM-Gr-ucA">
-                                <rect key="frame" x="20" y="275" width="280" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="oQT-4x-EtU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwS-Zp-BYy">
-                                <rect key="frame" x="20" y="340" width="280" height="35"/>
-                                <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="rEi-Go-8lq"/>
-                                </constraints>
-                                <state key="normal" title="分享给好友">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareBtnClick:" destination="07z-1s-8Sc" eventType="touchUpInside" id="KmT-x9-Zp7"/>
-                                </connections>
-                            </button>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Ee-ML-ktg"/>
+                                        <exclude reference="gTd-6h-jmg"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dAM-Gr-ucA" firstAttribute="leading" secondItem="o4Y-JJ-naH" secondAttribute="leadingMargin" id="4De-2J-p0a"/>
-                            <constraint firstItem="SwS-Zp-BYy" firstAttribute="leading" secondItem="o4Y-JJ-naH" secondAttribute="leadingMargin" id="8Gs-bK-r4g"/>
-                            <constraint firstItem="SwS-Zp-BYy" firstAttribute="trailing" secondItem="o4Y-JJ-naH" secondAttribute="trailingMargin" id="Fc2-59-XmY"/>
-                            <constraint firstItem="dAM-Gr-ucA" firstAttribute="trailing" secondItem="o4Y-JJ-naH" secondAttribute="trailingMargin" id="M7q-UY-qpK"/>
-                            <constraint firstItem="SwS-Zp-BYy" firstAttribute="top" secondItem="dAM-Gr-ucA" secondAttribute="bottom" constant="44" id="XRE-XP-aLQ"/>
-                            <constraint firstItem="dAM-Gr-ucA" firstAttribute="top" secondItem="hPw-Sm-9uT" secondAttribute="bottom" constant="41" id="ZL3-P7-tbS"/>
-                            <constraint firstItem="hPw-Sm-9uT" firstAttribute="centerX" secondItem="o4Y-JJ-naH" secondAttribute="centerX" id="n9S-el-lwe"/>
-                            <constraint firstItem="hPw-Sm-9uT" firstAttribute="top" secondItem="Xgd-Uo-m6e" secondAttribute="bottom" constant="64" id="uwS-aQ-4HU"/>
+                            <constraint firstItem="gXh-Ql-Mvq" firstAttribute="top" secondItem="hQd-lW-stj" secondAttribute="bottom" id="0cX-T0-7GW"/>
+                            <constraint firstItem="hQd-lW-stj" firstAttribute="top" secondItem="o4Y-JJ-naH" secondAttribute="topMargin" id="7Eh-El-ClU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hQd-lW-stj" secondAttribute="trailing" constant="-20" id="9bl-vT-Zxd"/>
+                            <constraint firstItem="hQd-lW-stj" firstAttribute="leading" secondItem="o4Y-JJ-naH" secondAttribute="leadingMargin" constant="-20" id="DJM-cN-e7L"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="topView" destination="hQd-lW-stj" id="Tpg-ej-jKk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TW1-B1-pJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

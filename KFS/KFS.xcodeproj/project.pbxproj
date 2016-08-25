@@ -52,6 +52,9 @@
 		A67B85721D6D493500B08D9F /* 故事03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A67B85711D6D493500B08D9F /* 故事03.m4a */; };
 		A67B85731D6D493500B08D9F /* 故事03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A67B85711D6D493500B08D9F /* 故事03.m4a */; };
 		A67B85741D6D493500B08D9F /* 故事03.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A67B85711D6D493500B08D9F /* 故事03.m4a */; };
+		A67B857D1D6D7A8200B08D9F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A67B85771D6D7A8200B08D9F /* libWeChatSDK.a */; };
+		A67B857E1D6D7A8200B08D9F /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = A67B85781D6D7A8200B08D9F /* read_me.txt */; };
+		A67B857F1D6D7A8200B08D9F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = A67B85791D6D7A8200B08D9F /* README.txt */; };
 		A6C672C91D5C102100EDCC56 /* AddRemandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672C81D5C102100EDCC56 /* AddRemandViewController.m */; };
 		A6C672D71D5C10B900EDCC56 /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672CC1D5C10B900EDCC56 /* LewPopupBackgroundView.m */; };
 		A6C672D81D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672CE1D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m */; };
@@ -61,6 +64,13 @@
 		A6C672DC1D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672D61D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m */; };
 		A6C672DF1D5C113800EDCC56 /* GFDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C672DE1D5C113800EDCC56 /* GFDateView.m */; };
 		A6C672E11D5C114B00EDCC56 /* GFDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C672E01D5C114B00EDCC56 /* GFDateView.xib */; };
+		A6D29AB11D6D7B1F000DCA0B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AB01D6D7B1F000DCA0B /* SystemConfiguration.framework */; };
+		A6D29AB31D6D7B3E000DCA0B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AB21D6D7B3E000DCA0B /* libz.tbd */; };
+		A6D29AB51D6D7B4F000DCA0B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AB41D6D7B4F000DCA0B /* libsqlite3.0.tbd */; };
+		A6D29AB81D6D7B9F000DCA0B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AB71D6D7B9F000DCA0B /* Security.framework */; };
+		A6D29ABC1D6D7F93000DCA0B /* GFShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D29ABB1D6D7F93000DCA0B /* GFShareView.m */; };
+		A6D29ADF1D6D8E30000DCA0B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29ADE1D6D8E30000DCA0B /* libc++.tbd */; };
+		A6D29AE11D6D8E56000DCA0B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AE01D6D8E56000DCA0B /* CoreTelephony.framework */; };
 		A6DCCE7F1D62C0D4006A0CAF /* LearnMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE7D1D62C0D4006A0CAF /* LearnMainCell.m */; };
 		A6DCCE801D62C0D4006A0CAF /* LearnMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6DCCE7E1D62C0D4006A0CAF /* LearnMainCell.xib */; };
 		A6DCCE841D62C127006A0CAF /* LearnSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE821D62C127006A0CAF /* LearnSubCell.m */; };
@@ -165,6 +175,12 @@
 		A6594BA21D61A6040007C4A3 /* JHWaveChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHWaveChart.m; sourceTree = "<group>"; };
 		A67B85691D6D421500B08D9F /* 短信08.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "短信08.caf"; sourceTree = "<group>"; };
 		A67B85711D6D493500B08D9F /* 故事03.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "故事03.m4a"; sourceTree = "<group>"; };
+		A67B85771D6D7A8200B08D9F /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		A67B85781D6D7A8200B08D9F /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		A67B85791D6D7A8200B08D9F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		A67B857A1D6D7A8200B08D9F /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		A67B857B1D6D7A8200B08D9F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		A67B857C1D6D7A8200B08D9F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		A6C672C71D5C102100EDCC56 /* AddRemandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRemandViewController.h; sourceTree = "<group>"; };
 		A6C672C81D5C102100EDCC56 /* AddRemandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRemandViewController.m; sourceTree = "<group>"; };
 		A6C672CB1D5C10B900EDCC56 /* LewPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupBackgroundView.h; sourceTree = "<group>"; };
@@ -182,6 +198,14 @@
 		A6C672DD1D5C113800EDCC56 /* GFDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFDateView.h; sourceTree = "<group>"; };
 		A6C672DE1D5C113800EDCC56 /* GFDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFDateView.m; sourceTree = "<group>"; };
 		A6C672E01D5C114B00EDCC56 /* GFDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFDateView.xib; sourceTree = "<group>"; };
+		A6D29AB01D6D7B1F000DCA0B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A6D29AB21D6D7B3E000DCA0B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A6D29AB41D6D7B4F000DCA0B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		A6D29AB71D6D7B9F000DCA0B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A6D29ABA1D6D7F93000DCA0B /* GFShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFShareView.h; sourceTree = "<group>"; };
+		A6D29ABB1D6D7F93000DCA0B /* GFShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFShareView.m; sourceTree = "<group>"; };
+		A6D29ADE1D6D8E30000DCA0B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A6D29AE01D6D8E56000DCA0B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		A6DCCE7C1D62C0D4006A0CAF /* LearnMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnMainCell.h; sourceTree = "<group>"; };
 		A6DCCE7D1D62C0D4006A0CAF /* LearnMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnMainCell.m; sourceTree = "<group>"; };
 		A6DCCE7E1D62C0D4006A0CAF /* LearnMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnMainCell.xib; sourceTree = "<group>"; };
@@ -199,6 +223,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D29AE11D6D8E56000DCA0B /* CoreTelephony.framework in Frameworks */,
+				A6D29ADF1D6D8E30000DCA0B /* libc++.tbd in Frameworks */,
+				A6D29AB81D6D7B9F000DCA0B /* Security.framework in Frameworks */,
+				A6D29AB51D6D7B4F000DCA0B /* libsqlite3.0.tbd in Frameworks */,
+				A6D29AB31D6D7B3E000DCA0B /* libz.tbd in Frameworks */,
+				A6D29AB11D6D7B1F000DCA0B /* SystemConfiguration.framework in Frameworks */,
+				A67B857D1D6D7A8200B08D9F /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +253,9 @@
 		A62F21171D518502003E71C7 = {
 			isa = PBXGroup;
 			children = (
+				A6D29AE01D6D8E56000DCA0B /* CoreTelephony.framework */,
+				A6D29ADE1D6D8E30000DCA0B /* libc++.tbd */,
+				A6D29AB61D6D7B62000DCA0B /* FrameWorks */,
 				A62F21221D518502003E71C7 /* KFS */,
 				A62F213F1D518502003E71C7 /* KFSTests */,
 				A62F214A1D518502003E71C7 /* KFSUITests */,
@@ -368,6 +402,8 @@
 		A62F217D1D5430DA003E71C7 /* 公共操作类 */ = {
 			isa = PBXGroup;
 			children = (
+				A6D29AB91D6D7F74000DCA0B /* View */,
+				A67B85761D6D7A8200B08D9F /* 微信 */,
 				A6594B8F1D61A6040007C4A3 /* JHChart */,
 				A6594B881D5C7E900007C4A3 /* Controller */,
 				A6C672CA1D5C10B900EDCC56 /* popupViewController */,
@@ -449,6 +485,19 @@
 			path = JHChart;
 			sourceTree = "<group>";
 		};
+		A67B85761D6D7A8200B08D9F /* 微信 */ = {
+			isa = PBXGroup;
+			children = (
+				A67B85771D6D7A8200B08D9F /* libWeChatSDK.a */,
+				A67B85781D6D7A8200B08D9F /* read_me.txt */,
+				A67B85791D6D7A8200B08D9F /* README.txt */,
+				A67B857A1D6D7A8200B08D9F /* WechatAuthSDK.h */,
+				A67B857B1D6D7A8200B08D9F /* WXApi.h */,
+				A67B857C1D6D7A8200B08D9F /* WXApiObject.h */,
+			);
+			path = "微信";
+			sourceTree = "<group>";
+		};
 		A6C672CA1D5C10B900EDCC56 /* popupViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,6 +515,26 @@
 				A6C672D61D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m */,
 			);
 			path = popupViewController;
+			sourceTree = "<group>";
+		};
+		A6D29AB61D6D7B62000DCA0B /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				A6D29AB71D6D7B9F000DCA0B /* Security.framework */,
+				A6D29AB41D6D7B4F000DCA0B /* libsqlite3.0.tbd */,
+				A6D29AB21D6D7B3E000DCA0B /* libz.tbd */,
+				A6D29AB01D6D7B1F000DCA0B /* SystemConfiguration.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		A6D29AB91D6D7F74000DCA0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6D29ABA1D6D7F93000DCA0B /* GFShareView.h */,
+				A6D29ABB1D6D7F93000DCA0B /* GFShareView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		A6DCCE7A1D62C08D006A0CAF /* Controller */ = {
@@ -596,6 +665,7 @@
 				A62F21361D518502003E71C7 /* LaunchScreen.storyboard in Resources */,
 				A6DCCE801D62C0D4006A0CAF /* LearnMainCell.xib in Resources */,
 				A67B856A1D6D421500B08D9F /* 短信08.caf in Resources */,
+				A67B857F1D6D7A8200B08D9F /* README.txt in Resources */,
 				A6C672E11D5C114B00EDCC56 /* GFDateView.xib in Resources */,
 				A62F217C1D51E24D003E71C7 /* TableViewCell.xib in Resources */,
 				A62F21331D518502003E71C7 /* Assets.xcassets in Resources */,
@@ -603,6 +673,7 @@
 				A62F21E41D5B10BA003E71C7 /* RemandSetTableViewCell.xib in Resources */,
 				A6DCCE851D62C127006A0CAF /* LearnSubCell.xib in Resources */,
 				A62F212E1D518502003E71C7 /* Main.storyboard in Resources */,
+				A67B857E1D6D7A8200B08D9F /* read_me.txt in Resources */,
 				A6594B871D5C2A360007C4A3 /* GFWeekView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,6 +710,7 @@
 				A62F21761D519DE1003E71C7 /* ForgetPwdViewController.m in Sources */,
 				A6594B8E1D5DC3C90007C4A3 /* MyViewController.m in Sources */,
 				A6C672D81D5C10B900EDCC56 /* LewPopupViewAnimationDrop.m in Sources */,
+				A6D29ABC1D6D7F93000DCA0B /* GFShareView.m in Sources */,
 				A62F21971D58671C003E71C7 /* MyStateView.m in Sources */,
 				A6C672DA1D5C10B900EDCC56 /* LewPopupViewAnimationSlide.m in Sources */,
 				A6594BAB1D61A6040007C4A3 /* JHWaveChart.m in Sources */,
@@ -816,9 +888,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = KFS/KFSPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "/公共操作类／微信";
 				INFOPLIST_FILE = KFS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KFS/公共操作类/微信",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -829,9 +906,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = KFS/KFSPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "/公共操作类／微信";
 				INFOPLIST_FILE = KFS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KFS/公共操作类/微信",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
