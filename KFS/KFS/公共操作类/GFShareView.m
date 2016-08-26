@@ -7,8 +7,7 @@
 //
 
 #import "GFShareView.h"
-#import <TencentOpenAPI/QQApiInterfaceObject.h>
-#import <TencentOpenAPI/QQApiInterface.h>
+
 
 
 
@@ -94,6 +93,10 @@
     }
     else{
         
+        QQApiImageArrayForQZoneObject *obj = [QQApiImageArrayForQZoneObject objectWithimageDataArray:nil title:@"分享到qq空间测试"];
+        SendMessageToQQReq *req = [SendMessageToQQReq reqWithContent:obj];
+        QQApiSendResultCode sent = [QQApiInterface SendReqToQZone:req];
+        [self handleSendResult:sent];
     }
 }
 
@@ -246,6 +249,8 @@
             break;
         }
     }
+    
+//    [self.delegate cancelShareView];
 }
 
 

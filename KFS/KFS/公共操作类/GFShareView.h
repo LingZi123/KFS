@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "WXApiObject.h"
 #import "WXApi.h"
+#import <TencentOpenAPI/QQApiInterface.h>
+#import <TencentOpenAPI/QQApiInterfaceObject.h>
 
 @protocol GFShareViewDelegate <NSObject>
 
