@@ -71,6 +71,13 @@
 		A6D29ABC1D6D7F93000DCA0B /* GFShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D29ABB1D6D7F93000DCA0B /* GFShareView.m */; };
 		A6D29ADF1D6D8E30000DCA0B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29ADE1D6D8E30000DCA0B /* libc++.tbd */; };
 		A6D29AE11D6D8E56000DCA0B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AE01D6D8E56000DCA0B /* CoreTelephony.framework */; };
+		A6D29AE81D6EE5BC000DCA0B /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AE61D6EE5BC000DCA0B /* TencentOpenAPI.framework */; };
+		A6D29AE91D6EE5BC000DCA0B /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6D29AE71D6EE5BC000DCA0B /* TencentOpenApi_IOS_Bundle.bundle */; };
+		A6D29AEB1D6EE5F0000DCA0B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AEA1D6EE5F0000DCA0B /* libiconv.tbd */; };
+		A6D29AED1D6EE5FD000DCA0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AEC1D6EE5FD000DCA0B /* CoreGraphics.framework */; };
+		A6D29AEF1D6EE60E000DCA0B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AEE1D6EE60E000DCA0B /* libsqlite3.tbd */; };
+		A6D29AF11D6EE621000DCA0B /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D29AF01D6EE621000DCA0B /* libstdc++.tbd */; };
+		A6D29AF81D6EEF65000DCA0B /* sdkCall.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D29AF61D6EEF65000DCA0B /* sdkCall.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A6DCCE7F1D62C0D4006A0CAF /* LearnMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE7D1D62C0D4006A0CAF /* LearnMainCell.m */; };
 		A6DCCE801D62C0D4006A0CAF /* LearnMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6DCCE7E1D62C0D4006A0CAF /* LearnMainCell.xib */; };
 		A6DCCE841D62C127006A0CAF /* LearnSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DCCE821D62C127006A0CAF /* LearnSubCell.m */; };
@@ -206,6 +213,15 @@
 		A6D29ABB1D6D7F93000DCA0B /* GFShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFShareView.m; sourceTree = "<group>"; };
 		A6D29ADE1D6D8E30000DCA0B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A6D29AE01D6D8E56000DCA0B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A6D29AE61D6EE5BC000DCA0B /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		A6D29AE71D6EE5BC000DCA0B /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		A6D29AEA1D6EE5F0000DCA0B /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A6D29AEC1D6EE5FD000DCA0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A6D29AEE1D6EE60E000DCA0B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A6D29AF01D6EE621000DCA0B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		A6D29AF51D6EEF65000DCA0B /* sdkCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdkCall.h; sourceTree = "<group>"; };
+		A6D29AF61D6EEF65000DCA0B /* sdkCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sdkCall.m; sourceTree = "<group>"; };
+		A6D29AF71D6EEF65000DCA0B /* sdkDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdkDef.h; sourceTree = "<group>"; };
 		A6DCCE7C1D62C0D4006A0CAF /* LearnMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnMainCell.h; sourceTree = "<group>"; };
 		A6DCCE7D1D62C0D4006A0CAF /* LearnMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnMainCell.m; sourceTree = "<group>"; };
 		A6DCCE7E1D62C0D4006A0CAF /* LearnMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearnMainCell.xib; sourceTree = "<group>"; };
@@ -223,7 +239,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D29AF11D6EE621000DCA0B /* libstdc++.tbd in Frameworks */,
+				A6D29AEF1D6EE60E000DCA0B /* libsqlite3.tbd in Frameworks */,
+				A6D29AED1D6EE5FD000DCA0B /* CoreGraphics.framework in Frameworks */,
+				A6D29AEB1D6EE5F0000DCA0B /* libiconv.tbd in Frameworks */,
 				A6D29AE11D6D8E56000DCA0B /* CoreTelephony.framework in Frameworks */,
+				A6D29AE81D6EE5BC000DCA0B /* TencentOpenAPI.framework in Frameworks */,
 				A6D29ADF1D6D8E30000DCA0B /* libc++.tbd in Frameworks */,
 				A6D29AB81D6D7B9F000DCA0B /* Security.framework in Frameworks */,
 				A6D29AB51D6D7B4F000DCA0B /* libsqlite3.0.tbd in Frameworks */,
@@ -253,8 +274,6 @@
 		A62F21171D518502003E71C7 = {
 			isa = PBXGroup;
 			children = (
-				A6D29AE01D6D8E56000DCA0B /* CoreTelephony.framework */,
-				A6D29ADE1D6D8E30000DCA0B /* libc++.tbd */,
 				A6D29AB61D6D7B62000DCA0B /* FrameWorks */,
 				A62F21221D518502003E71C7 /* KFS */,
 				A62F213F1D518502003E71C7 /* KFSTests */,
@@ -402,6 +421,7 @@
 		A62F217D1D5430DA003E71C7 /* 公共操作类 */ = {
 			isa = PBXGroup;
 			children = (
+				A6D29AE51D6EE5BC000DCA0B /* QQ */,
 				A6D29AB91D6D7F74000DCA0B /* View */,
 				A67B85761D6D7A8200B08D9F /* 微信 */,
 				A6594B8F1D61A6040007C4A3 /* JHChart */,
@@ -520,6 +540,12 @@
 		A6D29AB61D6D7B62000DCA0B /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
+				A6D29AF01D6EE621000DCA0B /* libstdc++.tbd */,
+				A6D29AEE1D6EE60E000DCA0B /* libsqlite3.tbd */,
+				A6D29AEC1D6EE5FD000DCA0B /* CoreGraphics.framework */,
+				A6D29AEA1D6EE5F0000DCA0B /* libiconv.tbd */,
+				A6D29AE01D6D8E56000DCA0B /* CoreTelephony.framework */,
+				A6D29ADE1D6D8E30000DCA0B /* libc++.tbd */,
 				A6D29AB71D6D7B9F000DCA0B /* Security.framework */,
 				A6D29AB41D6D7B4F000DCA0B /* libsqlite3.0.tbd */,
 				A6D29AB21D6D7B3E000DCA0B /* libz.tbd */,
@@ -535,6 +561,26 @@
 				A6D29ABB1D6D7F93000DCA0B /* GFShareView.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		A6D29AE51D6EE5BC000DCA0B /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				A6D29AF41D6EEF65000DCA0B /* sdk */,
+				A6D29AE61D6EE5BC000DCA0B /* TencentOpenAPI.framework */,
+				A6D29AE71D6EE5BC000DCA0B /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		A6D29AF41D6EEF65000DCA0B /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				A6D29AF51D6EEF65000DCA0B /* sdkCall.h */,
+				A6D29AF61D6EEF65000DCA0B /* sdkCall.m */,
+				A6D29AF71D6EEF65000DCA0B /* sdkDef.h */,
+			);
+			path = sdk;
 			sourceTree = "<group>";
 		};
 		A6DCCE7A1D62C08D006A0CAF /* Controller */ = {
@@ -666,6 +712,7 @@
 				A6DCCE801D62C0D4006A0CAF /* LearnMainCell.xib in Resources */,
 				A67B856A1D6D421500B08D9F /* 短信08.caf in Resources */,
 				A67B857F1D6D7A8200B08D9F /* README.txt in Resources */,
+				A6D29AE91D6EE5BC000DCA0B /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				A6C672E11D5C114B00EDCC56 /* GFDateView.xib in Resources */,
 				A62F217C1D51E24D003E71C7 /* TableViewCell.xib in Resources */,
 				A62F21331D518502003E71C7 /* Assets.xcassets in Resources */,
@@ -722,6 +769,7 @@
 				A6DCCE8B1D6550C5006A0CAF /* RegistTableViewController.m in Sources */,
 				A62F21311D518502003E71C7 /* KFS.xcdatamodeld in Sources */,
 				A6C672D71D5C10B900EDCC56 /* LewPopupBackgroundView.m in Sources */,
+				A6D29AF81D6EEF65000DCA0B /* sdkCall.m in Sources */,
 				A6594BA51D61A6040007C4A3 /* JHLineChart.m in Sources */,
 				A6C672DC1D5C10B900EDCC56 /* UIViewController+LewPopupViewController.m in Sources */,
 				A6594B8B1D5C7EAD0007C4A3 /* CommonRootViewController.m in Sources */,
@@ -887,8 +935,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KFS/公共操作类/QQ",
+				);
 				GCC_PREFIX_HEADER = KFS/KFSPrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "/公共操作类／微信";
+				HEADER_SEARCH_PATHS = (
+					"/公共操作类／QQ",
+					"/公共操作类／微信",
+				);
 				INFOPLIST_FILE = KFS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -896,6 +951,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/KFS/公共操作类/微信",
 				);
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -905,8 +961,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KFS/公共操作类/QQ",
+				);
 				GCC_PREFIX_HEADER = KFS/KFSPrefixHeader.pch;
-				HEADER_SEARCH_PATHS = "/公共操作类／微信";
+				HEADER_SEARCH_PATHS = (
+					"/公共操作类／QQ",
+					"/公共操作类／微信",
+				);
 				INFOPLIST_FILE = KFS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -914,6 +977,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/KFS/公共操作类/微信",
 				);
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gf.KFS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -36,3 +36,4 @@
 #define DE_Ration65  65.0/320.0
 
 #define DE_WeChatAppId @"wxb9ac005700c7efce"
+#define DE_TententAppId @"1105624492"

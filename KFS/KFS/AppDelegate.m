@@ -13,6 +13,7 @@
 #include "MyViewController.h"
 #import "LoginViewController.h"
 #import "WXApi.h"
+#import "sdkCall.h"
 
 
 @interface AppDelegate ()
@@ -28,8 +29,7 @@
     self.window.backgroundColor=DE_BgColorPink;
     
     
-    //向微信注册
-    [WXApi registerApp:DE_WeChatAppId];
+    
     
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
         UIUserNotificationSettings *noteSetting=[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil];
@@ -66,7 +66,13 @@
         [self makeLoginView];
     }
     
+    //向微信注册
+    [WXApi registerApp:DE_WeChatAppId];
     
+    //注册腾讯qq
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginSuccessed) name:kLoginSuccessed object:[sdkCall getinstance]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginFailed) name:kLoginFailed object:[sdkCall getinstance]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginCancelled) name:kLoginCancelled object:[sdkCall getinstance]];
     return YES;
 }
 
@@ -239,4 +245,32 @@
     }
     self.window.rootViewController=_loginNav;
 }
+
+#pragma mark-qq分享
+#pragma mark message
+- (void)loginSuccessed
+{
+ }
+
+- (void)loginFailed
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"结果" message:@"登录失败" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil];
+    [alertView show];
+}
+
+- (void) loginCancelled
+{
+    //do nothing
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [TencentOAuth HandleOpenURL:url];
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [TencentOAuth HandleOpenURL:url];
+}
+
 @end
