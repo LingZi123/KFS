@@ -36,9 +36,8 @@
     CGFloat height=CGRectGetHeight(self.frame);
     for (int i=0; i<4; i++) {
         UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(widthFlex+i*(55+widthFlex), 40, 55, 55)];
-        [btn setTitle:[NSString stringWithFormat:@"分享到%d ",i] forState:UIControlStateNormal];
         btn.titleLabel.font=DE_Font11;
-        [btn setBackgroundColor:[UIColor greenColor]];
+        [btn setBackgroundImage:[UIImage imageNamed:[titleArray  objectAtIndex:i]] forState:UIControlStateNormal];
         btn.tag=100+i;
         [btn addTarget:self action:@selector(shareBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
