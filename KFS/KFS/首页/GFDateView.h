@@ -11,8 +11,8 @@
 @protocol GFDateViewDelegate <NSObject>
 
 @optional
--(void)didDateSelectedFinished:(NSDate *)date dateStr:(NSString *)dateStr;
--(void)didTimeSelectedFinished:(NSDate *)date dateStr:(NSString *)dateStr;
+-(void)didDateSelectedFinished:(NSString *)dateStr;
+-(void)didTimeSelectedFinished:(NSString *)timeStr;
 
 @end
 

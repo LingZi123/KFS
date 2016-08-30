@@ -19,8 +19,10 @@
     NSDate *beginTime;//开始时间
     NSMutableArray *repeatArray;//重复时间
     NSString *repeatStr;
-    NSString *beginTimeStr;
+    NSString *beginDateStr;
+    NSString *timeStr;
     NSString *imagename;//图片
+    
     
     NSMutableDictionary *datamdic;
 }

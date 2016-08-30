@@ -28,7 +28,7 @@
             [dateFormatter setDateFormat:@"yyyy-MM-dd"];//四个y就是2014－10-15，2个y就是14-10-15，这是输出字符串的时候用到的
         }
         else{
-            [dateFormatter setDateFormat:@"HH:mm"];
+            [dateFormatter setDateFormat:@"HH:mm:ss"];
         }
     }
     return self;
@@ -44,10 +44,10 @@
     NSString *datestr=[dateFormatter stringFromDate:date];
     
     if (dateMode==UIDatePickerModeTime) {
-        [self.delegate didTimeSelectedFinished:date dateStr:datestr];
+        [self.delegate didTimeSelectedFinished:datestr];
     }
     else{
-         [self.delegate didDateSelectedFinished:date dateStr:datestr];
+         [self.delegate didDateSelectedFinished:datestr];
     }
    
     NSLog(@"%@",datestr);
